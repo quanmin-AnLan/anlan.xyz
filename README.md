@@ -1,5 +1,12 @@
 # 安澜网<http://www.anlan.xyz>
 
+## project need
+
+``` txt
+yarn
+node 14.x
+```
+
 ## Project setup
 
 ``` shell
