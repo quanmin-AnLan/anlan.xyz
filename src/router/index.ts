@@ -6,10 +6,6 @@ Vue.use(VueRouter);
 const routes: RouteConfig[] = [
   {
     path: '/',
-    redirect: '/index',
-  },
-  {
-    path: '/index',
     name: 'Index',
     component: () => import('../views/Home.vue'),
   },
@@ -20,8 +16,11 @@ const routes: RouteConfig[] = [
   },
   {
     path: '/aiding',
-    name: 'Python',
-    component: () => import('../views/Python.vue'),
+    name: 'AiDing',
+    component: () => import('../views/ai-ding/index.vue'),
+    meta: {
+      title: '猿人学 Python - 反反爬虫练习平台 V0.1',
+    },
   },
 ];
 
@@ -32,3 +31,8 @@ const router = new VueRouter({
 });
 
 export default router;
+
+router.beforeEach((to, from, next) => {
+  window.document.title = to.meta.title || '安澜网';
+  next();
+});

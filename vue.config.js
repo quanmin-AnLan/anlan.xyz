@@ -1,18 +1,18 @@
-const CompressionPlugin = require("compression-webpack-plugin");
+// const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = {
   publicPath: './',
   outputDir: 'dist',
   filenameHashing: false,
   productionSourceMap: false,
   crossorigin:undefined, // cors
-  chainWebpack: config => {
-    config
-			.plugin('html')
-			.tap(args => {
-				args[0].title = '安澜网'
-				return args
-			})
-  },
+  // chainWebpack: config => {
+  //   config
+	// 		.plugin('html')
+	// 		.tap(args => {
+	// 			args[0].title = '安澜网'
+	// 			return args
+	// 		})
+  // },
   // configureWebpack: config =>{
   //   if (process.env.NODE_ENV === 'production') {
   //     const plugins = []
