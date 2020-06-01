@@ -20,6 +20,8 @@
 <script>
 import Nav from './components/Nav.vue';
 import Table from './components/Table.vue';
+import { questionList } from '../../api/api';
+import qs from 'qs';
 export default {
   components: {
     Nav,
@@ -78,6 +80,14 @@ export default {
       ],
     };
   },
+  // methods: {
+  //   question() {
+  //     questionList({page: 1, count: 10}).then(res => {});
+  //   },
+  // },
+  // created() {
+  //   this.question();
+  // },
 };
 </script>
 
