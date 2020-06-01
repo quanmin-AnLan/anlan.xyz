@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <el-button @click="route('about')">About</el-button>
-    <el-button @click="route('aiding')">Aiding</el-button>
+    <el-button @click="route('aiding')">爱锭网（重构中）</el-button>
   </div>
 </template>
 

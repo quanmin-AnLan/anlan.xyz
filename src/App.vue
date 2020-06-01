@@ -7,6 +7,9 @@
 <script>
 export default {
   name: 'app',
+  mounted() {
+    document.querySelector('#app').style.minHeight = window.innerHeight + 'px';
+  },
 };
 </script>
 

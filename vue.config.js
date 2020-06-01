@@ -5,14 +5,14 @@ module.exports = {
   filenameHashing: false,
   productionSourceMap: false,
   crossorigin:undefined, // cors
-  // chainWebpack: config => {
-  //   config
-	// 		.plugin('html')
-	// 		.tap(args => {
-	// 			args[0].title = '安澜网'
-	// 			return args
-	// 		})
-  // },
+  chainWebpack: config => {
+    config
+			.plugin('html')
+			.tap(args => {
+				args[0].title = '安澜网'
+				return args
+			})
+  },
   // configureWebpack: config =>{
   //   if (process.env.NODE_ENV === 'production') {
   //     const plugins = []
