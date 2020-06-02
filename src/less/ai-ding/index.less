@@ -1,6 +1,19 @@
 .main {
   width: 100%;
-  background-color: #eee;
+  background: linear-gradient(-45deg, #fff, #f8f8f8, #e7e7e7, #e6f2f2);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
   .nav {
     margin-bottom: 30px;
   }
