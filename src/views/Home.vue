@@ -6,7 +6,7 @@
     <el-button @click="route('aiding')">爱锭网（重构中）</el-button>
     <el-tooltip placement="top">
       <div slot="content">
-        <p>扫右侧二维码加好友</p>
+        <p>扫描右侧二维码加好友</p>
         <p>填写观棋不宇推荐即可</p>
       </div>
       <el-button @click="aiding">爱锭网（跳转）</el-button>
