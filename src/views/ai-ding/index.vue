@@ -20,7 +20,7 @@
 <script>
 import Nav from './components/Nav.vue';
 import Table from './components/Table.vue';
-import { questionList } from '../../api/api';
+import { questionList, ranking } from '../../api/api';
 import qs from 'qs';
 export default {
   components: {
@@ -29,15 +29,7 @@ export default {
   },
   data() {
     return {
-      qaData: [
-        {
-          datatime: '2020-03-30T13:25:00',
-          diff: '简单',
-          href: 'http://www.python-spider.com/challenge/1',
-          success: true,
-          title: '【1.headers参数加密】无混淆的加密模式',
-        },
-      ],
+      qaData: [],
       qaSet: [
         {
           prop: 'question',
@@ -80,14 +72,36 @@ export default {
       ],
     };
   },
-  // methods: {
-  //   question() {
-  //     questionList({page: 1, count: 10}).then(res => {});
-  //   },
-  // },
-  // created() {
-  //   this.question();
-  // },
+  methods: {
+    question() {
+      questionList({page: 1, count: 10}).then((res) => {
+        this.qaData = res.infos.map((item) => {
+          return {
+            datatime: item.datatime,
+            diff: item.diff,
+            href: item.href,
+            success: item.success || '未登录',
+            title: item.title,
+          };
+        });
+      });
+    },
+    rank() {
+      ranking().then((res) => {
+        this.rankData = res.data.map((item) => {
+          return {
+            last_finish_time: item.last_finish_time,
+            nick: item.nick,
+            number: item.number,
+          };
+        });
+      });
+    },
+  },
+  mounted() {
+    this.question();
+    this.rank();
+  },
 };
 </script>
 

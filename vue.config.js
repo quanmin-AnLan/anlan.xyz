@@ -13,6 +13,17 @@ module.exports = {
 				return args
 			})
   },
+  devServer: {
+    proxy: {
+      '/api':{
+        target: 'http://www.python-spider.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
   // configureWebpack: config =>{
   //   if (process.env.NODE_ENV === 'production') {
   //     const plugins = []
