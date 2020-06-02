@@ -91,7 +91,7 @@ export default {
         this.rankData = res.data.map((item) => {
           return {
             last_finish_time: item.last_finish_time,
-            nick: item.nick,
+            nick: item.nick || 'null',
             number: item.number,
           };
         });
