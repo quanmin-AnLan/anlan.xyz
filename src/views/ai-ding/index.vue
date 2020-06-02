@@ -49,7 +49,7 @@ export default {
         {
           prop: 'success',
           label: '通关',
-          width: '150px',
+          width: '100px',
         },
       ],
       rankData: [],
@@ -97,7 +97,7 @@ export default {
             last_finish_time: item.last_finish_time.replace('T', ' '),
             nick: item.nick || 'null',
             number: item.number,
-            sort: res.data.indexOf(item) + 1,
+            sort: res.data.indexOf(item),
           };
         });
       });

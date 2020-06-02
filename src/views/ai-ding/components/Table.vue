@@ -23,7 +23,10 @@
           <div v-else-if="item.prop === 'success'">
             <span>{{scope.row.success}}</span>
           </div>
-          <div v-else>
+          <div v-else-if="item.prop === 'sort'">
+            <img :src="sortMap[scope.row.sort]" style="width:30px;" />
+          </div>
+          <div v-else :style="'color:' + colorMap[scope.row[item.prop]] || ''">
             <span>{{scope.row[item.prop]}}</span>
           </div>
 				</template>
@@ -42,6 +45,20 @@ export default {
       type: Array,
       default: () => [],
     },
+  },
+  data() {
+    return {
+      colorMap: {
+        困难: '#ec4c47',
+        中等: '#ed7366',
+        简单: '#009975',
+      },
+      sortMap: {
+        0: 'http://www.python-spider.com/static/crawl/assets/logo/top1.png',
+        1: 'http://www.python-spider.com/static/crawl/assets/logo/top2.png',
+        2: 'http://www.python-spider.com/static/crawl/assets/logo/top3.png',
+      },
+    };
   },
 };
 </script>
