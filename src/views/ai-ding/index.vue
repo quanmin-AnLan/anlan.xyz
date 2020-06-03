@@ -4,6 +4,7 @@
     <section class="container">
       <section class="left-container">
         <section class="rank">
+          <div class="title">闯关英雄榜</div>
           <Table :tableData="rankData" :headerSet="rankSet"></Table>
         </section>
         <section class="list">
@@ -12,6 +13,19 @@
       </section>
       <section class="right-container">
         <Table :tableData="qaData" :headerSet="qaSet"></Table>
+        <el-pagination v-show="qaData.length>0" 
+          hide-on-single-page 
+          class="pagination"
+          :background="true" 
+          @size-change="handleSizeChange"
+          @current-change="handleCurrentChange" 
+          :current-page="currentPage"
+          :page-sizes="[5, 10, 50, 100]"
+          :page-size="pageSize" 
+          layout="slot, prev, pager, next, jumper"
+          :total="total">
+          <span class="el-pagination__total">共{{Math.ceil(total/10)}}页</span>
+        </el-pagination>
       </section>
     </section>
   </section>
@@ -52,6 +66,9 @@ export default {
           width: '100px',
         },
       ],
+      total: 0,
+      pageSize: 10,
+      currentPage: 1,
       rankData: [],
       rankSet: [
         {
@@ -78,7 +95,8 @@ export default {
   },
   methods: {
     question() {
-      questionList({page: 1, count: 10}).then((res) => {
+      questionList({page: this.currentPage, count: this.pageSize}).then((res) => {
+        this.total = res.allcount;
         this.qaData = res.infos.map((item) => {
           return {
             datatime: item.datatime.replace('T', ' '),
@@ -101,6 +119,14 @@ export default {
           };
         });
       });
+    },
+    handleSizeChange(val) {
+      this.pageSize = val;
+      this.question();
+    },
+    handleCurrentChange(val) {
+      this.currentPage = val;
+      this.question();
     },
   },
   mounted() {
