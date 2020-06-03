@@ -37,24 +37,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.logo {
-  width: 300px;
-  margin-top: 50px;
-}
-.ad {
-  width: 233px;
-  height: 660px;
-  overflow-y: auto;
-  position: fixed;
-  top: 50%;
-  right: 30px;
-  margin-top: -330px;
-  &::-webkit-scrollbar {
-    background: transparent;
-  }
-  img {
-    width: 216px;
-    height: 1320px;
-  }
-}
+@import '../less/home.less';
 </style>
