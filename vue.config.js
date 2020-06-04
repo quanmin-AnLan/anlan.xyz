@@ -31,10 +31,10 @@ module.exports = {
         new CompressionPlugin({
           filename: '[path].gz[query]',
           algorithm: 'gzip',
-          test: /\.css$|\.ttf$|\.html$|\.svg$|\.json$|\.js$/,
-          threshold: 0, // 只有大小大于该值的资源会被处理
-          minRatio: 0.8, // 只有压缩率小于这个值的资源才会被处理
-          deleteOriginalAssets: true// 删除原文件
+          test: /\.(js|json|css|jp?eg|png)$/,
+          threshold: 0, 
+          minRatio: 1, 
+          deleteOriginalAssets: true,
         }),
       )
       config.plugins = [
