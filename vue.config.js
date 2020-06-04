@@ -3,7 +3,7 @@ module.exports = {
   publicPath: '/',
   outputDir: 'dist',
   filenameHashing: false,
-  productionSourceMap: false,
+  // productionSourceMap: false,
   crossorigin:undefined, // cors
   chainWebpack: config => {
     config
