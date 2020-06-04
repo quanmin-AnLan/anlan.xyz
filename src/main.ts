@@ -1,9 +1,9 @@
 import Vue from 'vue';
-import App from 'src/App.vue';
-import router from 'src/router/index';
-import store from 'src/store/index';
-import 'src/plugins/element.ts';
-import 'src/less/base.less';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import '@/plugins/element.ts';
+import '@/less/base.less';
 
 Vue.config.productionTip = false;
 
