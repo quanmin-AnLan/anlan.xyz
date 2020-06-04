@@ -1,6 +1,6 @@
 const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = {
-  publicPath: '/',
+  publicPath: './',
   outputDir: 'dist',
   filenameHashing: false,
   productionSourceMap: false,
