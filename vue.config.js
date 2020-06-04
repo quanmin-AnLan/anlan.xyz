@@ -37,6 +37,10 @@ module.exports = {
           deleteOriginalAssets: true,
         }),
       )
+      config.plugins = [
+        ...config.plugins,
+        ...plugins
+      ]
     }
   },
 }
