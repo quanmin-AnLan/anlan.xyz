@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img class="logo" src="../assets/anlan.jpg"> -->
+    <img class="logo" src="../assets/anlan.jpg">
     <HelloWorld msg="QQ：2016751527"/>
     <el-button @click="route('about')">全民大乐斗（待开发）</el-button>
     <el-button @click="route('aiding')">爱锭网（重构中）</el-button>
@@ -12,7 +12,7 @@
       <el-button @click="aiding">爱锭网（跳转）</el-button>
     </el-tooltip>
     <section class="ad">
-      <!-- <img src="../assets/aiding.jpg"> -->
+      <img src="../assets/aiding.jpg">
     </section>
   </div>
 </template>
