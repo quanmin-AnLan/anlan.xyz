@@ -22,6 +22,15 @@ const routes: RouteConfig[] = [
       title: '猿人学 Python - 反反爬虫练习平台 V0.1',
     },
   },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('../views/404.vue'),
+  },
+  {
+    path: '*',
+    redirect: '/404',
+  },
 ];
 
 const router = new VueRouter({
