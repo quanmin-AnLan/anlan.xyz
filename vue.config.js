@@ -1,8 +1,8 @@
 // const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = {
-  publicPath: './',
+  publicPath: '/',
   outputDir: 'dist',
-  filenameHashing: false,
+  assetsDir: 'assets',
   productionSourceMap: false,
   crossorigin:undefined, // cors
   chainWebpack: config => {
