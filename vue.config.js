@@ -34,7 +34,7 @@ module.exports = {
           test: /\.(html|js|json|ttf|css|jpeg|jpg|png)$/,
           threshold: 0, 
           minRatio: 1, 
-          deleteOriginalAssets: true,
+          deleteOriginalAssets: false,
         }),
       )
       config.plugins = [
