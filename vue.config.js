@@ -1,4 +1,4 @@
-const CompressionPlugin = require("compression-webpack-plugin");
+// const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = {
   publicPath: './',
   outputDir: 'dist',
@@ -24,23 +24,23 @@ module.exports = {
       }
     }
   },
-  configureWebpack: config =>{
-    if (process.env.NODE_ENV === 'production') {
-      const plugins = []
-      plugins.push(
-        new CompressionPlugin({
-          filename: '[path].gz[query]',
-          algorithm: 'gzip',
-          test: /\.(js|json|ttf|css|jpeg|jpg|png)$/,
-          threshold: 0, 
-          minRatio: 1, 
-          deleteOriginalAssets: true,
-        }),
-      )
-      config.plugins = [
-        ...config.plugins,
-        ...plugins
-      ]
-    }
-  },
+  // configureWebpack: config =>{
+  //   if (process.env.NODE_ENV === 'production') {
+  //     const plugins = []
+  //     plugins.push(
+  //       new CompressionPlugin({
+  //         filename: '[path].gz[query]',
+  //         algorithm: 'gzip',
+  //         test: /\.(js|json|ttf|css|jpeg|jpg|png)$/,
+  //         threshold: 0, 
+  //         minRatio: 1, 
+  //         deleteOriginalAssets: true,
+  //       }),
+  //     )
+  //     config.plugins = [
+  //       ...config.plugins,
+  //       ...plugins
+  //     ]
+  //   }
+  // },
 }
