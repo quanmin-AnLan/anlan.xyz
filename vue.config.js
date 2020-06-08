@@ -4,7 +4,6 @@ module.exports = {
   outputDir: 'dist',
   assetsDir: 'assets',
   productionSourceMap: false,
-  crossorigin:undefined, // cors
   chainWebpack: config => {
     config
 			.plugin('html')

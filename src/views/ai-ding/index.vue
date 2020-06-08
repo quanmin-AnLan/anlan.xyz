@@ -46,7 +46,6 @@
 import Nav from './components/Nav.vue';
 import Table from './components/Table.vue';
 import { questionList, ranking, struggle } from '../../api/api';
-import qs from 'qs';
 export default {
   components: {
     Nav,
