@@ -8,7 +8,10 @@
           <Table :tableData="rankData" :headerSet="rankSet"></Table>
         </section>
         <section class="list">
-          
+          <div class="title">奋战中的勇士</div>
+          <div v-for="item in listData" :key="item.sort" class="list-box">
+            <div class="list-item">勇士【{{item.nick}}】斩获了第{{item.number}}关BOSS的首级</div>
+          </div>
         </section>
       </section>
       <section class="right-container">
@@ -34,7 +37,7 @@
 <script>
 import Nav from './components/Nav.vue';
 import Table from './components/Table.vue';
-import { questionList, ranking } from '../../api/api';
+import { questionList, ranking, struggle } from '../../api/api';
 import qs from 'qs';
 export default {
   components: {
@@ -91,6 +94,7 @@ export default {
           width: '100px',
         },
       ],
+      listData: [],
     };
   },
   methods: {
@@ -120,6 +124,17 @@ export default {
         });
       });
     },
+    list() {
+      struggle().then((res) => {
+        this.listData = res.data.map((item) => {
+          return {
+            nick: item.nick || 'null',
+            number: item.challenge_number,
+            sort: res.data.indexOf(item),
+          };
+        });
+      });
+    },
     handleSizeChange(val) {
       this.pageSize = val;
       this.question();
@@ -132,6 +147,7 @@ export default {
   mounted() {
     this.question();
     this.rank();
+    this.list();
   },
 };
 </script>
