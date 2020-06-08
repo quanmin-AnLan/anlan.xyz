@@ -32,8 +32,8 @@
       </section>
     </section>
     <el-dialog title="说明" :visible.sync="isShow" width="30%">
-      <div>本项目为vue重构</div>
-      <div>由于权限原因，题目需要登录才可查看</div>
+      <div>本页为vue重构爱锭网（www.python-spider.com）</div>
+      <div>由于版权原因，题目需要登录至爱锭网才可查看</div>
       <div>点击登录/注册直接跳转爱锭网正式登录/注册页</div>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="isShow = false">确定</el-button>
