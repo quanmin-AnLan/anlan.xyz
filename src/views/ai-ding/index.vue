@@ -39,10 +39,12 @@
         <el-button type="primary" @click="isShow = false">确定</el-button>
       </span>
     </el-dialog>
+    <Home></Home>
   </section>
 </template>
 
 <script>
+import Home from '../../components/GoHome.vue';
 import Nav from './components/Nav.vue';
 import Table from './components/Table.vue';
 import { questionList, ranking, struggle } from '../../api/api';
@@ -50,6 +52,7 @@ export default {
   components: {
     Nav,
     Table,
+    Home,
   },
   data() {
     return {
