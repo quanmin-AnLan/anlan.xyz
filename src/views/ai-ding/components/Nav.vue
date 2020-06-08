@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="nav-left">
-      <div class="logo">猿人学 Python V0.85</div>
+      <div class="logo">猿人学 Python V0.9</div>
       <div class="tab" v-for="item in tabs" :key="item.props">{{item.value}}</div>
       <div class="search-box">
         <div class="search-input">

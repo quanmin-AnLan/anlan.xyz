@@ -10,9 +10,9 @@ const routes: RouteConfig[] = [
     component: () => import('../views/Home.vue'),
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue'),
+    path: '/qmdld',
+    name: 'qmdld',
+    component: () => import('../views/qmdld/index.vue'),
   },
   {
     path: '/aiding',

@@ -2,8 +2,8 @@
   <div class="home">
     <img class="logo" src="../assets/anlan.jpg">
     <HelloWorld msg="QQ：2016751527"/>
-    <el-button @click="route('about')">全民大乐斗（待开发）</el-button>
-    <el-button @click="route('aiding')">爱锭网（重构中）</el-button>
+    <el-button @click="route('qmdld')">全民大乐斗（待开发）</el-button>
+    <el-button @click="route('aiding')">爱锭网（安澜重构）</el-button>
     <el-tooltip placement="top">
       <div slot="content">
         <p>扫描右侧二维码加好友</p>

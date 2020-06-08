@@ -23,11 +23,11 @@
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange" 
           :current-page="currentPage"
-          :page-sizes="[5, 10, 50, 100]"
+          :page-sizes="[5, 10]"
           :page-size="pageSize" 
-          layout="slot, prev, pager, next, jumper"
+          layout="slot, sizes, prev, pager, next, jumper"
           :total="total">
-          <span class="el-pagination__total">共{{Math.ceil(total/10)}}页</span>
+          <span class="el-pagination__total">共{{Math.ceil(total/pageSize)}}页</span>
         </el-pagination>
       </section>
     </section>
