@@ -13,8 +13,8 @@
       </div>
     </div>
     <div class="nav-right">
-      <div class="login"><span>登录</span></div>
-      <div class="logon"><span>注册</span></div>
+      <div class="login" @click="login"><span>登录</span></div>
+      <div class="logon" @click="logon"><span>注册</span></div>
     </div>
   </div>
 </template>
@@ -26,6 +26,14 @@ export default {
       searchvalue: '',
       tabs: tabsConfig,
     };
+  },
+  methods: {
+    login() {
+      window.location.href = 'http://www.python-spider.com/challenge/login';
+    },
+    logon() {
+      window.location.href = 'http://www.python-spider.com/challenge/register';
+    },
   },
 };
 </script>

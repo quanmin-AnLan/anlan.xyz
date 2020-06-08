@@ -31,6 +31,14 @@
         </el-pagination>
       </section>
     </section>
+    <el-dialog title="说明" :visible.sync="isShow" width="30%">
+      <div>本项目为vue重构</div>
+      <div>由于权限原因，题目需要登录才可查看</div>
+      <div>点击登录/注册直接跳转爱锭网正式登录/注册页</div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="isShow = false">确定</el-button>
+      </span>
+    </el-dialog>
   </section>
 </template>
 
@@ -46,6 +54,7 @@ export default {
   },
   data() {
     return {
+      isShow: false,
       qaData: [],
       qaSet: [
         {
@@ -148,6 +157,7 @@ export default {
     this.question();
     this.rank();
     this.list();
+    this.isShow = true;
   },
 };
 </script>
