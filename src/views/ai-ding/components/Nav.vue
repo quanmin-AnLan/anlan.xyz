@@ -8,7 +8,7 @@
           <el-input placeholder="搜索题目" v-model="searchvalue"></el-input>
         </div>
         <div class="search-button">
-          <el-button>搜索</el-button>
+          <el-button @click="search">搜索</el-button>
         </div>
       </div>
     </div>
@@ -33,6 +33,13 @@ export default {
     },
     logon() {
       window.location.href = 'http://www.python-spider.com/challenge/register';
+    },
+    search() {
+      const that: any = this;
+      that.$message({
+        message: '因原网页无搜索功能，故搜索功能暂未开发',
+        type: 'warning',
+      });
     },
   },
 };
