@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
+import Cookies from 'js-cookie';
 
 Vue.use(VueRouter);
 
@@ -13,6 +14,14 @@ const routes: RouteConfig[] = [
     path: '/qmdld',
     name: 'qmdld',
     component: () => import('../views/qmdld/index.vue'),
+    beforeEnter(to, from , next) {
+      const isLogin: string = Cookies.get('isLogin');
+      if (isLogin && isLogin === 'true') {
+        next();
+      } else {
+        alert('请登录后再查看');
+      }
+    },
   },
   {
     path: '/aiding',

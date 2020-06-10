@@ -6,7 +6,7 @@
       </div>
       <div class="nav-right">
         <el-button @click="login">{{nickName}}</el-button>
-        <el-button @click="logon">注册</el-button>
+        <el-button @click="logon">{{logonOut}}</el-button>
       </div>
     </div>
     <el-dialog title="登录" :visible.sync="loginShow" width="30%">
@@ -29,7 +29,7 @@
   </section>
 </template>
 
-<script lang="ts">
+<script>
 import Cookies from 'js-cookie';
 export default {
   data() {
@@ -42,76 +42,95 @@ export default {
       loginName: '',
       loginPassword: '',
       nickName: '登录',
-      isLogin: false,
+      logonOut: '注册',
     };
   },
   methods: {
     login() {
-      const that: any = this;
-      that.loginName = '';
-      that.loginPassword = '';
-      if (!that.isLogin) {
-        that.loginShow = true;
+      const isLogin = Cookies.get('isLogin');
+      this.loginName = '';
+      this.loginPassword = '';
+      if (!isLogin || isLogin === 'false') {
+        this.loginShow = true;
       }
     },
     logon() {
-      const that: any = this;
-      that.username = '';
-      that.password = '';
-      if (window.localStorage.getItem('username') && window.localStorage.getItem('password')) {
-        that.$alert('您已注册过用户名，继续注册将覆盖原有用户名', '注意！', {
-          confirmButtonText: '确定',
-        });
-        that.logonShow = true;
+      const isLogin = Cookies.get('isLogin');
+      this.username = '';
+      this.password = '';
+      if (!isLogin || isLogin === 'false') {
+        if (window.localStorage.getItem('username') && window.localStorage.getItem('password')) {
+          this.$alert('您已注册过用户名，继续注册将覆盖原有用户名', '注意！', {
+            confirmButtonText: '确定',
+          });
+          this.logonShow = true;
+        } else {
+          this.logonShow = true;
+        }
       } else {
-        that.logonShow = true;
+        Cookies.set('isLogin', 'false', {domain: '.anlan.xyz'});
+        this.$message({
+          message: '已登出',
+          type: 'success',
+        });
+        this.nickName = '登录';
+        this.logonOut = '注册';
       }
     },
     loginSubmit() {
-      const that: any = this;
       if (window.localStorage.getItem('username') && window.localStorage.getItem('password')) {
         const name = window.localStorage.getItem('username');
         const key = window.localStorage.getItem('password');
-        if (name !== that.loginName || key !== that.loginPassword) {
-          that.$message({
-            message: name !== that.loginName ? '用户名不正确' : '密码不正确',
+        if (name !== this.loginName || key !== this.loginPassword) {
+          this.$message({
+            message: name !== this.loginName ? '用户名不正确' : '密码不正确',
             type: 'error',
           });
         } else {
-          that.$message({
+          this.$message({
             message: '登录成功！',
             type: 'success',
           });
-          that.nickName = '@' + name;
-          that.loginShow = false;
-          that.isLogin = true;
+          this.loginShow = false;
+          this.nickName = '@' + name;
+          this.logonOut = '登出';
+          Cookies.set('isLogin', 'true', {expires: 3 / 24, domain: '.anlan.xyz'});
         }
       } else {
-        that.$message({
+        this.$message({
           message: '您还未注册，请先注册',
           type: 'error',
         });
-        that.loginShow = false;
-        that.logonShow = true;
+        this.loginShow = false;
+        this.logonShow = true;
       }
     },
     logonSubmit() {
-      const that: any = this;
-      if ((!that.password || !that.secondPassword || !that.username) || that.password !== that.secondPassword) {
-        that.$message({
-          message: that.password !== that.secondPassword ? '两次密码输入不一致' : '内容不能为空',
+      if ((!this.password || !this.secondPassword || !this.username) || this.password !== this.secondPassword) {
+        this.$message({
+          message: this.password !== this.secondPassword ? '两次密码输入不一致' : '内容不能为空',
           type: 'error',
         });
       } else {
-        window.localStorage.setItem('username', that.username);
-        window.localStorage.setItem('password', that.password);
-        that.logonShow = false;
-        that.$message({
+        window.localStorage.setItem('username', this.username);
+        window.localStorage.setItem('password', this.password);
+        this.logonShow = false;
+        this.$message({
           message: '注册成功',
           type: 'success',
         });
       }
     },
+    checkLogin() {
+      const isLogin = Cookies.get('isLogin');
+      if (isLogin && isLogin === 'true') {
+        this.nickName = '@' + window.localStorage.getItem('username');
+        this.logonOut = '登出';
+      }
+    },
+  },
+  mounted() {
+    this.checkLogin();
   },
 };
 </script>
