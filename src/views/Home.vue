@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Nav></Nav>
     <img class="logo" src="../assets/anlan.jpg">
     <HelloWorld msg="QQ：2016751527"/>
     <el-button @click="route('qmdld')">全民大乐斗（待开发）</el-button>
@@ -19,11 +20,13 @@
 
 <script>
 import HelloWorld from '@/components/HelloWorld.vue';
+import Nav from '@/components/Nav.vue';
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
+    Nav,
   },
   methods: {
     route(page) {
