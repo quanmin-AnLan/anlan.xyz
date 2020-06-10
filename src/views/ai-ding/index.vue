@@ -36,7 +36,8 @@
       <div>由于版权原因，题目需要登录至爱锭网才可查看</div>
       <div>点击登录/注册直接跳转爱锭网正式登录/注册页</div>
       <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="isShow = false">确定</el-button>
+        <el-button type="primary" @click="setLocalStorage">关闭且不再提示</el-button>
+        <el-button type="primary" @click="dialogClose">关闭</el-button>
       </span>
     </el-dialog>
     <Home></Home>
@@ -154,12 +155,27 @@ export default {
       this.currentPage = val;
       this.question();
     },
+    dialogClose() {
+      this.isShow = false;
+    },
+    setLocalStorage() {
+      this.dialogClose();
+      window.localStorage.setItem('isClose', 'true');
+    },
+    checkLocalStorage() {
+      const isClose = window.localStorage.getItem('isClose');
+      if (isClose) {
+        this.isShow = false;
+      } else {
+        this.isShow = true;
+      }
+    },
   },
   mounted() {
     this.question();
     this.rank();
     this.list();
-    this.isShow = true;
+    this.checkLocalStorage();
   },
 };
 </script>

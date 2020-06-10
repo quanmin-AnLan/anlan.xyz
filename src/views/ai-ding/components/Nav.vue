@@ -19,7 +19,7 @@
   </div>
 </template>
 <script lang="ts">
-import tabsConfig from '../config/tabs';
+import { tabsConfig } from '../config/tabs';
 export default {
   data() {
     return {
