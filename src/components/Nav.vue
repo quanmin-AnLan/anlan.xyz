@@ -58,12 +58,21 @@ export default {
       const isLogin = Cookies.get('isLogin');
       this.username = '';
       this.password = '';
+      this.secondPassword = '';
       if (!isLogin || isLogin === 'false') {
         if (window.localStorage.getItem('username') && window.localStorage.getItem('password')) {
-          this.$alert('您已注册过用户名，继续注册将覆盖原有用户名', '注意！', {
-            confirmButtonText: '确定',
+          this.$confirm('您已注册过用户名，继续注册将覆盖原有用户名,是否继续？', '注意！', {
+            confirmButtonText: '继续',
+            cancelButtonText: '取消',
+            type: 'warning',
+          }).then(() => {
+            this.logonShow = true;
+          }).catch(() => {
+            this.$message({
+              message: '已取消',
+              type: 'info',
+            });
           });
-          this.logonShow = true;
         } else {
           this.logonShow = true;
         }
