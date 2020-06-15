@@ -18,7 +18,7 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import { tabsConfig } from '../config/tabs';
 export default {
   data() {
@@ -35,8 +35,7 @@ export default {
       window.location.href = 'http://www.python-spider.com/challenge/register';
     },
     search() {
-      const that: any = this;
-      that.$message({
+      this.$message({
         message: '因原网页无搜索功能，故搜索功能暂未开发',
         type: 'warning',
       });
