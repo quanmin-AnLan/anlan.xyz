@@ -20,9 +20,6 @@
 					<div v-if="item.prop === 'question'">
             <a :href="scope.row.href">{{scope.row.title}}</a>
 					</div>
-          <div v-else-if="item.prop === 'success'">
-            <span>{{scope.row.success}}</span>
-          </div>
           <div v-else-if="item.prop === 'sort'">
             <img :src="sortMap[scope.row.sort]" style="width:30px;" />
           </div>

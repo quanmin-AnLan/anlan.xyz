@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <Nav></Nav>
     <router-view />
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue';
 export default {
   name: 'app',
+  components: {
+    Nav,
+  },
   mounted() {
     document.querySelector('#app').style.minHeight = window.innerHeight + 'px';
   },
@@ -26,6 +31,6 @@ export default {
   justify-content: center;
 }
 body {
-  margin: 0 !important;
+  margin: 50px 0 0 !important;
 }
 </style>
