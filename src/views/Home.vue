@@ -13,7 +13,7 @@
       <el-button @click="aiding">爱锭网（跳转）</el-button>
     </el-tooltip>
     <section class="ad">
-      <img src="../assets/aiding.jpg">
+      <el-image style="width: 100%;" :src="imgurl" :preview-src-list="imgurls" fit="fill"></el-image>
     </section>
   </div>
 </template>
@@ -27,6 +27,14 @@ export default {
   components: {
     HelloWorld,
     Nav,
+  },
+  data() {
+    return {
+      imgurl: require('../assets/aiding.jpg'),
+      imgurls: [
+        require('../assets/aiding.jpg'),
+      ],
+    };
   },
   methods: {
     route(page) {
