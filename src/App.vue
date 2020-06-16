@@ -29,8 +29,10 @@ export default {
   margin: 0 auto;
   height: 100%;
   justify-content: center;
+  box-sizing: border-box;
+  padding-top: 50px;
 }
 body {
-  margin: 50px 0 0 !important;
+  margin: 0 !important;
 }
 </style>
