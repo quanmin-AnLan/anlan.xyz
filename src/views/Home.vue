@@ -38,7 +38,7 @@ export default {
       this.$router.push({path: '/' + page});
     },
     aiding() {
-      window.location.href = 'http://www.python-spider.com';
+      window.location.href = 'http://www.python-spider.com/challenge';
     },
   },
 };
