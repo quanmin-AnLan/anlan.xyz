@@ -61,6 +61,16 @@ export default {
       qaData: [],
       qaSet: [
         {
+          prop: 'number',
+          label: '#',
+          width: '80px',
+        },
+        {
+          prop: 'category',
+          label: '类型',
+          width: '120px',
+        },
+        {
           prop: 'url',
           label: '题目',
           align: 'left',
@@ -132,6 +142,8 @@ export default {
             href: item.href,
             success: item.success || '未登录',
             title: item.title,
+            number: item.number,
+            category: item.category,
           };
         });
       });
