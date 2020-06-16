@@ -16,19 +16,13 @@
       </section>
       <section class="right-container">
         <al-table :tableData="qaData" :headerSet="qaSet"></al-table>
-        <el-pagination v-show="qaData.length>0" 
-          hide-on-single-page 
-          class="pagination"
-          :background="true" 
-          @size-change="handleSizeChange"
-          @current-change="handleCurrentChange" 
-          :current-page="currentPage"
-          :page-sizes="[5, 10]"
-          :page-size="pageSize" 
-          layout="slot, sizes, prev, pager, next, jumper"
-          :total="total">
-          <span class="el-pagination__total">共{{Math.ceil(total/pageSize)}}页</span>
-        </el-pagination>
+        <al-pagination
+          :total="total"
+          :currentPage.sync="currentPage" 
+          :pageSize.sync="pageSize"
+          v-on:update:pageSize="question"
+          v-on:update:currentPage="question">
+        </al-pagination>
       </section>
     </section>
     <el-dialog title="说明" :visible.sync="isShow" width="30%">
@@ -48,11 +42,13 @@
 import Home from '@/components/GoHome.vue';
 import Nav from './components/Nav.vue';
 import AlTable from '@/components/AlTable.vue';
+import AlPagination from '@/components/AlPagination.vue';
 import { questionList, ranking, struggle } from '@/api/api';
 export default {
   components: {
     Nav,
     AlTable,
+    AlPagination,
     Home,
   },
   data() {
@@ -170,14 +166,6 @@ export default {
           };
         });
       });
-    },
-    handleSizeChange(val) {
-      this.pageSize = val;
-      this.question();
-    },
-    handleCurrentChange(val) {
-      this.currentPage = val;
-      this.question();
     },
     dialogClose() {
       this.isShow = false;
