@@ -5,7 +5,7 @@
       <section class="left-container">
         <section class="rank">
           <div class="title">闯关英雄榜</div>
-          <Table :tableData="rankData" :headerSet="rankSet"></Table>
+          <al-table :tableData="rankData" :headerSet="rankSet"></al-table>
         </section>
         <section class="list">
           <div class="title">奋战中的勇士</div>
@@ -15,7 +15,7 @@
         </section>
       </section>
       <section class="right-container">
-        <Table :tableData="qaData" :headerSet="qaSet"></Table>
+        <al-table :tableData="qaData" :headerSet="qaSet"></al-table>
         <el-pagination v-show="qaData.length>0" 
           hide-on-single-page 
           class="pagination"
@@ -45,14 +45,14 @@
 </template>
 
 <script>
-import Home from '../../components/GoHome.vue';
+import Home from '@/components/GoHome.vue';
 import Nav from './components/Nav.vue';
-import Table from './components/Table.vue';
-import { questionList, ranking, struggle } from '../../api/api';
+import AlTable from '@/components/AlTable.vue';
+import { questionList, ranking, struggle } from '@/api/api';
 export default {
   components: {
     Nav,
-    Table,
+    AlTable,
     Home,
   },
   data() {
@@ -61,7 +61,7 @@ export default {
       qaData: [],
       qaSet: [
         {
-          prop: 'question',
+          prop: 'url',
           label: '题目',
           align: 'left',
         },
@@ -69,6 +69,7 @@ export default {
           prop: 'datatime',
           label: '发布时间',
           width: '100px',
+          sortable: 'sortable',
         },
         {
           prop: 'diff',
@@ -107,6 +108,16 @@ export default {
         },
       ],
       listData: [],
+      colorMap: {
+        困难: '#ec4c47',
+        中等: '#ed7366',
+        简单: '#009975',
+      },
+      sortMap: {
+        0: 'http://www.python-spider.com/static/crawl/assets/logo/top1.png',
+        1: 'http://www.python-spider.com/static/crawl/assets/logo/top2.png',
+        2: 'http://www.python-spider.com/static/crawl/assets/logo/top3.png',
+      },
     };
   },
   methods: {
@@ -117,6 +128,7 @@ export default {
           return {
             datatime: item.datatime.replace('T', ' '),
             diff: item.diff,
+            colordiff: this.colorMap[item.diff],
             href: item.href,
             success: item.success || '未登录',
             title: item.title,
@@ -128,10 +140,10 @@ export default {
       ranking().then((res) => {
         this.rankData = res.data.map((item) => {
           return {
-            last_finish_time: item.last_finish_time.replace('T', ' '),
             nick: item.nick || 'null',
             number: item.number,
-            sort: res.data.indexOf(item),
+            last_finish_time: item.last_finish_time.replace('T', ' '),
+            sort: this.sortMap[res.data.indexOf(item)] || '',
           };
         });
       });
