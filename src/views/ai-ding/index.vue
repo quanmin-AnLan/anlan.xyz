@@ -18,6 +18,7 @@
         <al-table :tableData="qaData" :headerSet="qaSet"></al-table>
         <al-pagination
           :total="total"
+          :sizes="sizes"
           :currentPage.sync="currentPage" 
           :pageSize.sync="pageSize"
           v-on:update:pageSize="question"
@@ -91,6 +92,7 @@ export default {
       total: 0,
       pageSize: 10,
       currentPage: 1,
+      sizes: [5, 10],
       rankData: [],
       rankSet: [
         {
