@@ -20,7 +20,7 @@
 				<!-- 表体 -->
 				<template slot-scope="scope">
 					<div v-if="item.prop === 'url'">
-            <a :href="scope.row.href">{{scope.row.title}}</a>
+            <a :href="scope.row.href" target="_blank">{{scope.row.title}}</a>
 					</div>
           <div v-else-if="item.prop === 'operate'">
             <slot name="operate-detail" :scope="scope"></slot>
