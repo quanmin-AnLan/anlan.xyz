@@ -53,7 +53,7 @@ export default {
           href: 'http://www.anlan.xyz:8080/update/2020/618.txt',
           title: '【全民大乐斗】6月18日更新公告',
           number: '3',
-          timer: '2020/06/23 11:15:55',
+          timer: '2020/06/17 11:15:55',
         },
       ],
     };
