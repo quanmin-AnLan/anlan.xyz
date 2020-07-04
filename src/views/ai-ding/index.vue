@@ -84,6 +84,11 @@ export default {
           width: '100px',
         },
         {
+          prop: 'pass_number',
+          label: '通关人数',
+          width: '80px',
+        },
+        {
           prop: 'success',
           label: '通关',
           width: '100px',
@@ -138,6 +143,7 @@ export default {
             diff: item.diff,
             colordiff: this.colorMap[item.diff],
             href: item.href,
+            pass_number: item.pass_number,
             success: item.success || '未登录',
             title: item.title,
             number: item.number,
