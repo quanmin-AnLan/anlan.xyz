@@ -38,7 +38,7 @@ export default {
       ],
       update: [
         {
-          href: 'http://www.anlan.xyz:8080/update/2020/702.txt',
+          href: 'http://www.anlan.xyz:8080/update/2020/709.txt',
           title: '【全民大乐斗】7月9日更新公告',
           number: '1',
           timer: '2020/07/08 17:09:08',
