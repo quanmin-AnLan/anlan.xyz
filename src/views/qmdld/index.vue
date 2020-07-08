@@ -39,21 +39,27 @@ export default {
       update: [
         {
           href: 'http://www.anlan.xyz:8080/update/2020/702.txt',
-          title: '【全民大乐斗】7月2日更新公告',
+          title: '【全民大乐斗】7月9日更新公告',
           number: '1',
+          timer: '2020/07/08 17:09:08',
+        },
+        {
+          href: 'http://www.anlan.xyz:8080/update/2020/v11k4.txt',
+          title: '【全民大乐斗】新区开放公告',
+          number: '1.1',
+          timer: '2020/07/08 17:09:08',
+        },
+        {
+          href: 'http://www.anlan.xyz:8080/update/2020/702.txt',
+          title: '【全民大乐斗】7月2日更新公告',
+          number: '2',
           timer: '2020/07/01 12:25:44',
         },
         {
           href: 'http://www.anlan.xyz:8080/update/2020/624.txt',
           title: '【全民大乐斗】6月24日更新公告',
-          number: '2',
-          timer: '2020/06/23 11:54:27',
-        },
-        {
-          href: 'http://www.anlan.xyz:8080/update/2020/618.txt',
-          title: '【全民大乐斗】6月18日更新公告',
           number: '3',
-          timer: '2020/06/17 11:15:55',
+          timer: '2020/06/23 11:54:27',
         },
       ],
     };
