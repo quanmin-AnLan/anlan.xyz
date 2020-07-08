@@ -7,6 +7,13 @@
       <section class="right-container"></section>
     </section>
     <Home></Home>
+    <el-dialog title="说明" :visible.sync="show" width="30%">
+      <div style="font-size: 18px;">由于安澜比较懒，所以只展示最近3次更新公告</div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="setLocalStorage">关闭且不再提示</el-button>
+        <el-button type="primary" @click="dialogClose">关闭</el-button>
+      </span>
+    </el-dialog>
   </section>
 </template>
 
@@ -20,6 +27,7 @@ export default {
   },
   data() {
     return {
+      show: false,
       updateSet: [
         {
           prop: 'number',
@@ -63,6 +71,26 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    dialogClose() {
+      this.show = false;
+    },
+    setLocalStorage() {
+      this.dialogClose();
+      window.localStorage.setItem('show', 'true');
+    },
+    checkLocalStorage() {
+      const isClose = window.localStorage.getItem('show');
+      if (isClose) {
+        this.show = false;
+      } else {
+        this.show = true;
+      }
+    },
+  },
+  mounted() {
+    this.checkLocalStorage();
   },
 };
 </script>
