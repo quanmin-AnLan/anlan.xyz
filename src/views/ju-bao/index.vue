@@ -28,7 +28,7 @@ export default {
 .main {
   width: 100%;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 0 30px;
   header {
     height: 80px;
     line-height: 80px;
