@@ -32,6 +32,11 @@ const routes: RouteConfig[] = [
     },
   },
   {
+    path: '/jubao',
+    name: 'JuBao',
+    component: () => import('../views/ju-bao/index.vue'),
+  },
+  {
     path: '/404',
     name: '404',
     component: () => import('../views/404.vue'),
