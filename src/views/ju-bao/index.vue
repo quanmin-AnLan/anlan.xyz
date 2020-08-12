@@ -17,7 +17,7 @@ export default {
         {
           props: 'title',
           label: '标题',
-        }
+        },
       ],
     };
   },
