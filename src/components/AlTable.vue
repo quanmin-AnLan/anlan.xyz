@@ -31,6 +31,9 @@
           <div v-else-if="item.prop === 'sort'">
             <img :src="scope.row.sort" style="width:30px;" />
           </div>
+          <div v-else-if="item.prop === 'img'">
+            <el-image style="width: 100%;" :src="scope.row.img" :preview-src-list="[scope.row.img]" fit="fill"></el-image>
+          </div>
           <div v-else :style="'color:' + scope.row['color'+item.prop] || ''">
             <span>{{scope.row[item.prop]}}</span>
           </div>
