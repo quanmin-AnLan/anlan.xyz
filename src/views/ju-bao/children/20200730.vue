@@ -17,10 +17,16 @@ export default {
       day: '30',
       tableData: [
         {
-          area: '微信小程序10086区',
-          uid: '46205844',
-          img: 'http://p0.itc.cn/c_fill,w_155,h_103,g_faces,q_70/images03/20200813/576bf74f109c4a8181d1dda40145d9d0.jpeg',
+          area: '微信小程序10010区',
+          uid: '4620584',
+          img: 'http://p0.itc.cn/images03/20200813/576bf74f109c4a8181d1dda40145d9d0.jpeg',
           times: '初犯',
+        },
+        {
+          area: '微信小程序10086区',
+          uid: '88888888',
+          img: 'http://p1.itc.cn/images01/20200812/e25ff914add445abacad9aea064dca8b.jpeg',
+          times: '多次',
         },
       ],
     };
