@@ -37,6 +37,16 @@ const routes: RouteConfig[] = [
     component: () => import('../views/ju-bao/index.vue'),
   },
   {
+    path: '/jubao/view',
+    component: () => import('../views/ju-bao/children/index.vue'),
+    children: [
+      {
+        path: '/jubao/view/20200730',
+        component: () => import('../views/ju-bao/children/20200730.vue'),
+      },
+    ],
+  },
+  {
     path: '/404',
     name: '404',
     component: () => import('../views/404.vue'),
