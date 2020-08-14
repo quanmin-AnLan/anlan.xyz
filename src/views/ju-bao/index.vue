@@ -27,12 +27,12 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20200730',
           title: '2020年7月30日不文明行为备案',
-          area: '这是一条假数据',
+          area: '手Q区，空间2、3区，微信小程序3、9、11区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20200803',
           title: '2020年8月3日不文明行为备案',
-          area: '这是一条假数据',
+          area: '空间3、4区，微信小程序1、3、5、9、11区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20200810',

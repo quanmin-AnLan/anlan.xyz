@@ -13,8 +13,8 @@ export default {
   data() {
     return {
       year: '2020',
-      month: '7',
-      day: '30',
+      month: '8',
+      day: '17',
       tableData: [
         {
           area: '微信小程序10010区',
