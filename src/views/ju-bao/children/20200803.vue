@@ -17,16 +17,16 @@ export default {
       day: '30',
       tableData: [
         {
-          area: '手Q区',
-          uid: '711275',
-          img: 'https://i.loli.net/2020/08/14/Rgs6I9reTOJ3Zjm.png',
+          area: '微信小程序10010区',
+          uid: '4620584',
+          img: 'http://p0.itc.cn/images03/20200813/576bf74f109c4a8181d1dda40145d9d0.jpeg',
           times: '初犯',
         },
         {
-          area: '空间2区',
-          uid: '8767368',
-          img: 'https://i.loli.net/2020/08/14/eRmcdBEsah5jCNx.png',
-          times: '第2次',
+          area: '微信小程序10086区',
+          uid: '88888888',
+          img: 'http://p1.itc.cn/images01/20200812/e25ff914add445abacad9aea064dca8b.jpeg',
+          times: '多次',
         },
       ],
     };
