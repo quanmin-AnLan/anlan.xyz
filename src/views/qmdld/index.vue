@@ -38,30 +38,22 @@ export default {
           prop: 'url',
           label: '更新公告',
         },
-        {
-          prop: 'timer',
-          label: '上传时间',
-          width: '100px',
-        },
       ],
       update: [
         {
           href: 'http://www.anlan.xyz:8080/update/2020/813.txt',
           title: '【全民大乐斗】8月13日更新公告',
           number: '1',
-          timer: '2020/08/12 11:53:27',
         },
         {
           href: 'http://www.anlan.xyz:8080/update/2020/806.txt',
           title: '【全民大乐斗】8月6日更新公告',
           number: '2',
-          timer: '2020/08/05 11:25:39',
         },
         {
           href: 'http://www.anlan.xyz:8080/update/2020/730.txt',
           title: '【全民大乐斗】7月30日更新公告',
           number: '3',
-          timer: '2020/07/29 14:09:08',
         },
       ],
     };
