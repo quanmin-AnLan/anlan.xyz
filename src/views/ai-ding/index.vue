@@ -10,7 +10,7 @@
         <section class="list">
           <div class="title">奋战中的勇士</div>
           <div v-for="item in listData" :key="item.sort" class="list-box">
-            <div class="list-item">勇士【{{item.nick}}】斩获了第{{item.number}}关BOSS的首级</div>
+            <div class="list-item">勇士【{{item.nick}}】于{{item.last_finish_time}}通过了第{{item.number}}关！</div>
           </div>
         </section>
       </section>
@@ -170,6 +170,7 @@ export default {
           return {
             nick: item.nick || 'null',
             number: item.challenge_number,
+            last_finish_time: item.last_finish_time.replace('T', ' '),
             sort: res.data.indexOf(item),
           };
         });
