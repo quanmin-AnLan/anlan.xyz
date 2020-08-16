@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <header>{{ year }}年{{ month }}月{{ day }}日不文明行为</header>
+    <header>{{ year }}年{{ month }}月{{ day }}日不文明行为备案</header>
     <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
   </section>
 </template>

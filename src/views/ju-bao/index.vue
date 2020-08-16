@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <header>不文明行为备案</header>
+    <header>【全民大乐斗】不文明行为备案</header>
     <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
   </section>
 </template>
@@ -37,17 +37,17 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20200810',
           title: '2020年8月10日不文明行为备案',
-          area: '这是一条假数据',
+          area: '空间2区，手Q区，QQ小程序区，微信小程序1、3、10、11区，微信H5区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20200813',
           title: '2020年8月13日不文明行为备案',
-          area: '这是一条假数据',
+          area: '空间2区，手Q区，QQ小程序区，微信小程序3区，微信H5区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20200817',
           title: '2020年8月17日不文明行为备案',
-          area: '这是一条假数据',
+          area: 'QQ小程序区，微信小程序1、3、9、11区',
         },
       ],
     };

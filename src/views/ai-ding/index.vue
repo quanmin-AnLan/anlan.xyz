@@ -19,7 +19,7 @@
         <al-pagination
           :total="total"
           :sizes="sizes"
-          :currentPage.sync="currentPage" 
+          :currentPage.sync="currentPage"
           :pageSize.sync="pageSize"
           v-on:update:pageSize="question"
           v-on:update:currentPage="question">
