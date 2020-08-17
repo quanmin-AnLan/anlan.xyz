@@ -29,6 +29,12 @@ export default {
           times: '第2次',
         },
         {
+          area: '微信小程序3区',
+          uid: '98391131',
+          img: 'http://anlan.xyz:8080/images/jubao/20200817/001.jpg',
+          times: '第4次',
+        },
+        {
           area: '微信小程序9区',
           uid: '37990145',
           img: 'http://anlan.xyz:8080/images/jubao/20200817/004.jpg',
