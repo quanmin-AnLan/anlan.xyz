@@ -35,6 +35,9 @@ const routes: RouteConfig[] = [
     path: '/jubao',
     name: 'JuBao',
     component: () => import('../views/ju-bao/index.vue'),
+    meta: {
+      title: '安澜网 - 稽查中心',
+    },
   },
   {
     path: '/jubao/view',
@@ -59,6 +62,10 @@ const routes: RouteConfig[] = [
       {
         path: '/jubao/view/20200817',
         component: () => import('../views/ju-bao/children/20200817.vue'),
+      },
+      {
+        path: '/jubao/view/20200820',
+        component: () => import('../views/ju-bao/children/20200820.vue'),
       },
     ],
   },
