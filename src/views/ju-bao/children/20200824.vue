@@ -14,7 +14,7 @@ export default {
     return {
       year: '2020',
       month: '8',
-      day: '20',
+      day: '24',
       tableData: [
         {
           area: '微信小程序1区',
