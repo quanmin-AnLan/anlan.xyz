@@ -21,6 +21,7 @@ export default {
         {
           prop: 'area',
           label: '涉及区服',
+          align: 'left',
         },
       ],
       tableData: [
@@ -69,6 +70,20 @@ export default {
     height: 80px;
     line-height: 80px;
     font-size: 30px;
+  }
+}
+/deep/ .el-table {
+  .el-table__header-wrapper {
+    .el-table__header {
+      font-size: 16px;
+      .is-leaf {
+        background-color: #506fbc;
+      }
+      .cell {
+        color: #fff;
+        text-align: center;
+      }
+    }
   }
 }
 </style>
