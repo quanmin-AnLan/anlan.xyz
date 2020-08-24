@@ -17,10 +17,40 @@ export default {
       day: '31',
       tableData: [
         {
-          area: 'aaaaa',
-          uid: 'bbbbb',
-          img: '',
-          times: 'ccccc',
+          area: '微信小程序1区',
+          uid: '4262795',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/001.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序1区',
+          uid: '97998353',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/002.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序10区',
+          uid: '30150159',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/003.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序10区',
+          uid: '43717149',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/004.jpg',
+          times: '初犯',
+        },
+        {
+          area: 'QQ小程序区',
+          uid: '6351274',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/005.jpg',
+          times: '初犯',
+        },
+        {
+          area: 'QQ小程序区',
+          uid: '5341361',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/006.jpg',
+          times: '初犯',
         },
       ],
     };
