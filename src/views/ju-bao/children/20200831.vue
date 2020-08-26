@@ -82,6 +82,12 @@ export default {
           img: 'http://anlan.xyz:8080/images/jubao/20200831/006.jpg',
           times: '初犯',
         },
+        {
+          area: '空间2区',
+          uid: '8767368',
+          img: 'http://anlan.xyz:8080/images/jubao/20200831/012.jpg',
+          times: '第4次',
+        },
       ],
     };
   },
