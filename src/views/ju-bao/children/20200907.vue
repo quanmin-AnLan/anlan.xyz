@@ -41,6 +41,18 @@ export default {
           times: '初犯',
         },
         {
+          area: 'QQ小程序区',
+          uid: '5341361',
+          img: 'http://anlan.xyz:8080/images/jubao/20200907/006.jpg',
+          times: '初犯',
+        },
+        {
+          area: '空间1区',
+          uid: '8363871',
+          img: 'http://anlan.xyz:8080/images/jubao/20200907/007.jpg',
+          times: '第2次',
+        },
+        {
           area: '空间3区',
           uid: '3385691',
           img: 'http://anlan.xyz:8080/images/jubao/20200907/003.jpg',
