@@ -4,7 +4,9 @@
       <section class="left-container">
         <al-table :tableData="update" :headerSet="updateSet"></al-table>
       </section>
-      <section class="right-container"></section>
+      <section class="right-container">
+        <el-button @click="$router.push('/jubao')">稽查中心</el-button>
+      </section>
     </section>
     <Home></Home>
     <el-dialog title="说明" :visible.sync="show" width="30%">

@@ -2,14 +2,17 @@
   <section class="main">
     <header>【全民大乐斗】不文明行为备案</header>
     <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
+    <Home></Home>
   </section>
 </template>
 
 <script>
 import AlTable from '@/components/AlTable.vue';
+import Home from '@/components/GoHome.vue';
 export default {
   components: {
     AlTable,
+    Home,
   },
   data() {
     return {
