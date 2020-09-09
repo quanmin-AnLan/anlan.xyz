@@ -71,7 +71,7 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20200914',
           title: '2020年9月14日不文明行为备案',
-          area: 'QQ小程序区，空间1区，微信小程序1、11区',
+          area: 'QQ小程序区，空间1区，微信小程序1、8、11区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20200921',
