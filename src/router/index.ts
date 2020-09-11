@@ -106,5 +106,8 @@ export default router;
 
 router.beforeEach((to, from, next) => {
   window.document.title = to.meta.title || '安澜网';
+  if (to.path.indexOf('/jubao/view/') !== -1) {
+    window.document.title = window.location.pathname.slice(-8);
+  }
   next();
 });
