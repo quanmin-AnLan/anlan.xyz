@@ -41,6 +41,18 @@ export default {
           times: '初犯',
         },
         {
+          area: '微信小程序4区',
+          uid: '7493615',
+          img: 'http://anlan.xyz:8080/images/jubao/20200914/009.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序8区',
+          uid: '73293134',
+          img: 'http://anlan.xyz:8080/images/jubao/20200914/010.jpg',
+          times: '初犯',
+        },
+        {
           area: '微信小程序8区',
           uid: '92754114',
           img: 'http://anlan.xyz:8080/images/jubao/20200914/005.jpg',
