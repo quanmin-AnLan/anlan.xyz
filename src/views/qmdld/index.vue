@@ -6,6 +6,7 @@
       </section>
       <section class="right-container">
         <el-button @click="$router.push('/jubao')">稽查中心</el-button>
+        <el-button @click="random(arr.slice(0, 175), 20)">投票抽奖</el-button> 
       </section>
     </section>
     <Home></Home>
@@ -58,6 +59,7 @@ export default {
           number: '3',
         },
       ],
+      arr: [],
     };
   },
   methods: {
@@ -76,9 +78,40 @@ export default {
         this.show = true;
       }
     },
+    random(arr, num) {
+      const len = arr.length;
+      for (let i = len - 1; i >= 0; i--) {
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+        const itemIndex = arr[randomIndex];
+        arr[randomIndex] = arr[i];
+        arr[i] = itemIndex;
+      }
+      const arrList = [];
+      for (let i = 0; i < num; i++) {
+        arrList.push(arr[i]);
+      }
+      for (let i = 1; i < arrList.length; i++) {
+        for (let j = 0; j < arrList.length - 1; j++) {
+          const temp = 0;
+          if (arrList[j] > arrList[j + 1]) {
+            temp = arrList[j];
+            arrList[j] = arrList[j + 1];
+            arrList[j + 1] = temp;
+          }
+        }
+      }
+      console.log(arrList);
+    },
+    arrPush(arr) {
+      for (let i = 0; i < 1000; i++) {
+        arr.push(i + 1);
+      }
+      return arr;
+    },
   },
   mounted() {
     this.checkLocalStorage();
+    this.arrPush(this.arr);
   },
 };
 </script>
