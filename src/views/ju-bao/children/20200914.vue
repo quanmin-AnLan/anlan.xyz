@@ -23,6 +23,12 @@ export default {
           times: '初犯',
         },
         {
+          area: '空间2区',
+          uid: '3306565',
+          img: 'http://anlan.xyz:8080/images/jubao/20200914/011.jpg',
+          times: '初犯',
+        },
+        {
           area: 'QQ小程序区',
           uid: '3093061',
           img: 'http://anlan.xyz:8080/images/jubao/20200914/003.jpg',
