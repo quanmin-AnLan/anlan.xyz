@@ -6,7 +6,7 @@
       </section>
       <section class="right-container">
         <el-button @click="$router.push('/jubao')">稽查中心</el-button>
-        <el-button @click="random(arr.slice(0, 175), 20)">投票抽奖</el-button> 
+        <el-button @click="random(arr.slice(0, 129), 20)">投票抽奖</el-button>
       </section>
     </section>
     <Home></Home>
