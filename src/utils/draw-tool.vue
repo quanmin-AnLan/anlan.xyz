@@ -34,7 +34,7 @@ export default {
       listData: [],
       isDrawMap: {
         0: '否',
-        1: '是', 
+        1: '是',
       },
     };
   },

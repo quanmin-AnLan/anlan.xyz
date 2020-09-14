@@ -1,7 +1,7 @@
 <template>
   <section class="main">
     <header>【全民大乐斗】华山论剑投票抽奖备案</header>
-    <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
+    <al-table :headerSet="headerSet" :tableData="listData"></al-table>
     <Home></Home>
   </section>
 </template>
@@ -40,39 +40,49 @@ export default {
       ],
       tableData: [
         {
-          href: 'http://www.anlan.xyz/draw/view/1',
-          title: '第1期华山论剑投票竞猜',
           draw: '冠军',
           result: '乔巴教授',
           team: '子 · 夜',
           item: '微信小程序一区 昵称：乔巴教授 战力：1738830',
         },
         {
-          href: 'http://www.anlan.xyz/draw/view/2',
-          title: '第2期华山论剑投票竞猜',
           draw: '冠军',
           result: '白也',
           team: '大雪龙骑',
           item: '其他大佬',
         },
         {
-          href: 'http://www.anlan.xyz/draw/view/3',
-          title: '第3期华山论剑投票竞猜',
           draw: '冠军',
           result: '秋容',
           team: '大雪龙骑',
           item: '其他大佬',
         },
         {
-          href: 'http://www.anlan.xyz/draw/view/4',
-          title: '第4期华山论剑投票竞猜',
           draw: '???',
           result: '???',
           team: '???',
           item: '???',
         },
       ],
+      listData: [],
     };
+  },
+  methods: {
+    washData(data) {
+      this.listData = data.map((item) => {
+        return {
+          href: 'http://www.anlan.xyz/draw/view/' + parseInt(data.indexOf(item) + 1, 10),
+          title: '第' + parseInt(data.indexOf(item) + 1, 10) + '期华山论剑投票竞猜',
+          draw: item.draw,
+          result: item.result,
+          team: item.team,
+          item: item.item,
+        };
+      });
+    },
+  },
+  mounted() {
+    this.washData(this.tableData);
   },
 };
 </script>
