@@ -113,6 +113,10 @@ const routes: RouteConfig[] = [
         path: '/draw/view/3',
         component: () => import('../views/draw/children/3.vue'),
       },
+      {
+        path: '/draw/view/4',
+        component: () => import('../views/draw/children/4.vue'),
+      },
     ],
   },
   {

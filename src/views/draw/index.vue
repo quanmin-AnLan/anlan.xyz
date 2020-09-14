@@ -31,7 +31,7 @@ export default {
         },
         {
           prop: 'team',
-          label: '所在帮派',
+          label: '冠军所在帮派',
         },
         {
           prop: 'item',
@@ -62,6 +62,14 @@ export default {
           result: '秋容',
           team: '大雪龙骑',
           item: '其他大佬',
+        },
+        {
+          href: 'http://www.anlan.xyz/draw/view/4',
+          title: '第4期华山论剑投票竞猜',
+          draw: '???',
+          result: '???',
+          team: '???',
+          item: '???',
         },
       ],
     };
