@@ -90,6 +90,32 @@ const routes: RouteConfig[] = [
     ],
   },
   {
+    path: '/draw',
+    name: 'Draw',
+    component: () => import('../views/draw/index.vue'),
+    meta: {
+      title: '安澜网 - 抽奖中心',
+    },
+  },
+  {
+    path: '/draw/view',
+    component: () => import('../views/draw/children/index.vue'),
+    children: [
+      {
+        path: '/draw/view/1',
+        component: () => import('../views/draw/children/1.vue'),
+      },
+      {
+        path: '/draw/view/2',
+        component: () => import('../views/draw/children/2.vue'),
+      },
+      {
+        path: '/draw/view/3',
+        component: () => import('../views/draw/children/3.vue'),
+      },
+    ],
+  },
+  {
     path: '/404',
     name: '404',
     component: () => import('../views/404.vue'),
@@ -112,6 +138,9 @@ router.beforeEach((to, from, next) => {
   window.document.title = to.meta.title || '安澜网';
   if (to.path.indexOf('/jubao/view/') !== -1) {
     window.document.title = '安澜查杀 - ' + window.location.pathname.slice(-8);
+  }
+  if (to.path.indexOf('/draw/view/') !== -1) {
+    window.document.title = '安澜网 - 抽奖 - 第' + window.location.pathname.slice(-1) + '期';
   }
   next();
 });
