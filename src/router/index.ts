@@ -83,6 +83,10 @@ const routes: RouteConfig[] = [
         path: '/jubao/view/20200921',
         component: () => import('../views/ju-bao/children/20200921.vue'),
       },
+      {
+        path: '/jubao/view/20200928',
+        component: () => import('../views/ju-bao/children/20200928.vue'),
+      },
     ],
   },
   {
