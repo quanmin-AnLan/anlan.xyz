@@ -15,7 +15,7 @@ export default {
       num: '4',
       tableData: [
         {
-          qq: '111111111',
+          qq: '???',
           isDraw: '0',
           times: '1',
         },

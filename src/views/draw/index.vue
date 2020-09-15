@@ -58,7 +58,7 @@ export default {
           item: '其他大佬',
         },
         {
-          draw: '???',
+          draw: '亚军',
           result: '???',
           team: '???',
           item: '???',
