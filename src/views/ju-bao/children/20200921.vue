@@ -40,6 +40,12 @@ export default {
           img: 'http://anlan.xyz:8080/images/jubao/20200921/004.jpg',
           times: '初犯',
         },
+        {
+          area: '微信小程序11区',
+          uid: '33987142',
+          img: 'http://anlan.xyz:8080/images/jubao/20200921/005.jpg',
+          times: '第2次',
+        },
       ],
     };
   },
