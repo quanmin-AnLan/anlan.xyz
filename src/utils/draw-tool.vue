@@ -36,6 +36,13 @@ export default {
         0: '否',
         1: '是',
       },
+      colorMap: {
+        1: 'red',
+      },
+      bgMap: {
+        3: 'yellow',
+        5: 'pink',
+      },
     };
   },
   props: {
@@ -56,6 +63,11 @@ export default {
           isDraw: this.isDrawMap[item.isDraw],
           times: item.times,
           timeNum: data.indexOf(item) + 1,
+          colorqq: this.colorMap[item.isDraw],
+          colortimes: this.colorMap[item.isDraw],
+          colortimeNum: this.colorMap[item.isDraw],
+          colorisDraw: this.colorMap[item.isDraw],
+          backgroundqq: this.bgMap[item.times],
         };
       });
     },
