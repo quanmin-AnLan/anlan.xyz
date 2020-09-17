@@ -58,6 +58,18 @@ export default {
           img: 'http://anlan.xyz:8080/images/jubao/20200921/005.jpg',
           times: '第2次',
         },
+        {
+          area: '空间4区',
+          uid: '27940108',
+          img: 'http://anlan.xyz:8080/images/jubao/20200921/008.jpg',
+          times: '初犯',
+        },
+        {
+          area: '空间4区',
+          uid: '9191098',
+          img: 'http://anlan.xyz:8080/images/jubao/20200921/009.jpg',
+          times: '初犯',
+        },
       ],
     };
   },
