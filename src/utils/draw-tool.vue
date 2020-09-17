@@ -68,6 +68,9 @@ export default {
           colortimeNum: this.colorMap[item.isDraw],
           colorisDraw: this.colorMap[item.isDraw],
           backgroundqq: this.bgMap[item.times],
+          backgroundisDraw: this.bgMap[item.times],
+          backgroundtimeNum: this.bgMap[item.times],
+          backgroundtimes: this.bgMap[item.times],
         };
       });
     },

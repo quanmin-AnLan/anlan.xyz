@@ -75,7 +75,7 @@ export default {
         {
           prop: 'datatime',
           label: '发布时间',
-          width: '100px',
+          width: '150px',
           sortable: 'sortable',
         },
         {
@@ -112,7 +112,7 @@ export default {
         {
           prop: 'last_finish_time',
           label: '通关日期',
-          width: '100px',
+          width: '150px',
         },
         {
           prop: 'sort',
