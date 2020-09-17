@@ -38,7 +38,7 @@ export default {
       },
       colorMap: {
         1: '#f00',
-        3: '#abcdef',
+        3: '#000',
         5: '#fff',
       },
       bgMap: {
