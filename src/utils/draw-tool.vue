@@ -37,11 +37,17 @@ export default {
         1: '是',
       },
       colorMap: {
-        1: 'red',
+        1: '#f00',
+        3: '#abcdef',
+        5: '#fff',
       },
       bgMap: {
-        3: 'yellow',
-        5: 'pink',
+        3: '#f00',
+        5: '#000',
+      },
+      nbMap: {
+        3: '#00f',
+        5: '#ffd700',
       },
     };
   },
@@ -63,10 +69,26 @@ export default {
           isDraw: this.isDrawMap[item.isDraw],
           times: item.times,
           timeNum: data.indexOf(item) + 1,
-          colorqq: this.colorMap[item.isDraw],
-          colortimes: this.colorMap[item.isDraw],
-          colortimeNum: this.colorMap[item.isDraw],
-          colorisDraw: this.colorMap[item.isDraw],
+          colorqq: this.bgMap[item.times] ?
+                  this.colorMap[item.isDraw] ?
+                  this.nbMap[item.times] :
+                  this.colorMap[item.times] :
+                  this.colorMap[item.isDraw],
+          colortimes: this.bgMap[item.times] ?
+                  this.colorMap[item.isDraw] ?
+                  this.nbMap[item.times] :
+                  this.colorMap[item.times] :
+                  this.colorMap[item.isDraw],
+          colortimeNum: this.bgMap[item.times] ?
+                  this.colorMap[item.isDraw] ?
+                  this.nbMap[item.times] :
+                  this.colorMap[item.times] :
+                  this.colorMap[item.isDraw],
+          colorisDraw: this.bgMap[item.times] ?
+                  this.colorMap[item.isDraw] ?
+                  this.nbMap[item.times] :
+                  this.colorMap[item.times] :
+                  this.colorMap[item.isDraw],
           backgroundqq: this.bgMap[item.times],
           backgroundisDraw: this.bgMap[item.times],
           backgroundtimeNum: this.bgMap[item.times],
