@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img class="logo" src="../assets/anlan.jpg">
+    <el-image class="logo" :src="anlanUrl" :preview-src-list="anlanUrls" fit="fill"></el-image>
     <HelloWorld msg="QQ：2016751527"/>
     <el-button @click="route('qmdld')">全民大乐斗专区</el-button>
     <el-button @click="route('aiding')">爱锭网（安澜重构）</el-button>
@@ -30,6 +30,10 @@ export default {
       imgurl: require('../assets/aiding.jpg'),
       imgurls: [
         require('../assets/aiding.jpg'),
+      ],
+      anlanUrl: require('../assets/anlan.jpg'),
+      anlanUrls: [
+        require('../assets/anlan.jpg'),
       ],
     };
   },
