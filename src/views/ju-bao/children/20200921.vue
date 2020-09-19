@@ -82,6 +82,12 @@ export default {
           img: 'http://anlan.xyz:8080/images/jubao/20200921/009.jpg',
           times: '初犯',
         },
+        {
+          area: 'QQ小程序区',
+          uid: '5341361',
+          img: 'http://anlan.xyz:8080/images/jubao/20200921/012.jpg',
+          times: '第3次',
+        },
       ],
     };
   },
