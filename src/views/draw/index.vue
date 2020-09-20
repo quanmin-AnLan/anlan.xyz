@@ -31,7 +31,7 @@ export default {
         },
         {
           prop: 'team',
-          label: '冠军所在帮派',
+          label: '猜中人所在帮派',
         },
         {
           prop: 'item',
@@ -59,6 +59,12 @@ export default {
         },
         {
           draw: '亚军',
+          result: '白也',
+          team: '大雪龙骑',
+          item: '其他大佬',
+        },
+        {
+          draw: '???',
           result: '???',
           team: '???',
           item: '???',
