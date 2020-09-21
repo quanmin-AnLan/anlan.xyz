@@ -16,7 +16,7 @@ export default {
       tableData: [
         {
           qq: '344564701',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -51,7 +51,7 @@ export default {
         },
         {
           qq: '813059151',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -91,7 +91,7 @@ export default {
         },
         {
           qq: '476907339',
-          isDraw: '0',
+          isDraw: '1',
           times: '3',
         },
         {
@@ -131,7 +131,7 @@ export default {
         },
         {
           qq: '363858005',
-          isDraw: '0',
+          isDraw: '1',
           times: '2',
         },
         {
@@ -171,7 +171,7 @@ export default {
         },
         {
           qq: '2142175032',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -211,7 +211,7 @@ export default {
         },
         {
           qq: '446069783',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -251,7 +251,7 @@ export default {
         },
         {
           qq: '57260698',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -286,7 +286,7 @@ export default {
         },
         {
           qq: '651398821',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -326,7 +326,7 @@ export default {
         },
         {
           qq: '403159861',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -366,7 +366,7 @@ export default {
         },
         {
           qq: '359337375',
-          isDraw: '0',
+          isDraw: '1',
           times: '3',
         },
         {
@@ -376,7 +376,7 @@ export default {
         },
         {
           qq: '3246777637',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -406,7 +406,7 @@ export default {
         },
         {
           qq: '287546630',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -446,7 +446,7 @@ export default {
         },
         {
           qq: '1183924041',
-          isDraw: '0',
+          isDraw: '1',
           times: '2',
         },
         {
@@ -486,7 +486,7 @@ export default {
         },
         {
           qq: '1569503987',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -526,7 +526,7 @@ export default {
         },
         {
           qq: '769319722',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -566,7 +566,7 @@ export default {
         },
         {
           qq: '1459304805',
-          isDraw: '0',
+          isDraw: '1',
           times: '2',
         },
         {
@@ -606,7 +606,7 @@ export default {
         },
         {
           qq: '1152815658',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -646,7 +646,7 @@ export default {
         },
         {
           qq: '1205387016',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -686,7 +686,7 @@ export default {
         },
         {
           qq: '1065312112',
-          isDraw: '0',
+          isDraw: '1',
           times: '1',
         },
         {
@@ -726,7 +726,7 @@ export default {
         },
         {
           qq: '3391868848',
-          isDraw: '0',
+          isDraw: '1',
           times: '3',
         },
         {
