@@ -81,6 +81,11 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20200928',
           title: '2020年9月28日不文明行为备案',
+          area: '微信小程序10区',
+        },
+        {
+          href: 'http://www.anlan.xyz/jubao/view/20201000',
+          title: '2020年10月??日不文明行为备案',
           area: 'null',
         },
       ],
