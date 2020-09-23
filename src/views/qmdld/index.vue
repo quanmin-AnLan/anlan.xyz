@@ -45,18 +45,18 @@ export default {
       ],
       update: [
         {
+          href: 'http://www.anlan.xyz:8080/update/2020/924.txt',
+          title: '【全民大乐斗】9月24日更新公告',
+          number: '1',
+        },
+        {
           href: 'http://www.anlan.xyz:8080/update/2020/917.txt',
           title: '【全民大乐斗】9月17日更新公告',
-          number: '1',
+          number: '2',
         },
         {
           href: 'http://www.anlan.xyz:8080/update/2020/910.txt',
           title: '【全民大乐斗】9月10日更新公告',
-          number: '2',
-        },
-        {
-          href: 'http://www.anlan.xyz:8080/update/2020/903.txt',
-          title: '【全民大乐斗】9月3日更新公告',
           number: '3',
         },
       ],
