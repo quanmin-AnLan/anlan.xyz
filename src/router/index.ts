@@ -93,40 +93,40 @@ const routes: RouteConfig[] = [
       },
     ],
   },
-  {
-    path: '/draw',
-    name: 'Draw',
-    component: () => import('../views/draw/index.vue'),
-    meta: {
-      title: '安澜网 - 抽奖中心',
-    },
-  },
-  {
-    path: '/draw/view',
-    component: () => import('../views/draw/children/index.vue'),
-    children: [
-      {
-        path: '/draw/view/1',
-        component: () => import('../views/draw/children/1.vue'),
-      },
-      {
-        path: '/draw/view/2',
-        component: () => import('../views/draw/children/2.vue'),
-      },
-      {
-        path: '/draw/view/3',
-        component: () => import('../views/draw/children/3.vue'),
-      },
-      {
-        path: '/draw/view/4',
-        component: () => import('../views/draw/children/4.vue'),
-      },
-      {
-        path: '/draw/view/5',
-        component: () => import('../views/draw/children/5.vue'),
-      },
-    ],
-  },
+  // {
+  //   path: '/draw',
+  //   name: 'Draw',
+  //   component: () => import('../views/draw/index.vue'),
+  //   meta: {
+  //     title: '安澜网 - 抽奖中心',
+  //   },
+  // },
+  // {
+  //   path: '/draw/view',
+  //   component: () => import('../views/draw/children/index.vue'),
+  //   children: [
+  //     {
+  //       path: '/draw/view/1',
+  //       component: () => import('../views/draw/children/1.vue'),
+  //     },
+  //     {
+  //       path: '/draw/view/2',
+  //       component: () => import('../views/draw/children/2.vue'),
+  //     },
+  //     {
+  //       path: '/draw/view/3',
+  //       component: () => import('../views/draw/children/3.vue'),
+  //     },
+  //     {
+  //       path: '/draw/view/4',
+  //       component: () => import('../views/draw/children/4.vue'),
+  //     },
+  //     {
+  //       path: '/draw/view/5',
+  //       component: () => import('../views/draw/children/5.vue'),
+  //     },
+  //   ],
+  // },
   {
     path: '/404',
     name: '404',
