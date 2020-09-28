@@ -91,7 +91,7 @@ export default {
         {
           area: '空间3区',
           uid: '5225073',
-          img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598697122811&di=cd1f756e11e0ba48044f10fe3e3aa3b0&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190621%2F5e0ef16b7f764cf0b31d58d9439eb7ac.png',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20200928/012.jpg',
           times: '封7天',
         },
         {

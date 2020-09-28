@@ -14,7 +14,7 @@ export default {
     return {
       year: '2020',
       month: '10',
-      day: '??',
+      day: '12',
       tableData: [
         {
           area: '你猜',
