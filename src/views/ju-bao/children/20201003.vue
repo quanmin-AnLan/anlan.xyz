@@ -26,7 +26,7 @@ export default {
           area: '微信小程序10区',
           uid: '84178156',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201003/002.jpg',
-          times: '初犯',
+          times: '第2次',
         },
         {
           area: '微信小程序10区',
