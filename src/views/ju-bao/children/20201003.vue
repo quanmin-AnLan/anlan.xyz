@@ -28,6 +28,24 @@ export default {
           img: 'http://www.anlan.xyz:8080/images/jubao/20201003/002.jpg',
           times: '初犯',
         },
+        {
+          area: '微信小程序10区',
+          uid: '60374139',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201003/004.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序11区',
+          uid: '49740176',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201003/006.jpg',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序11区',
+          uid: '77888147',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201003/005.jpg',
+          times: '初犯',
+        },
       ],
     };
   },
