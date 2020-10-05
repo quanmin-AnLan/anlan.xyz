@@ -84,8 +84,8 @@ export default {
           area: '手Q区，空间3区，微信小程序1、4、10、11区',
         },
         {
-          href: 'http://www.anlan.xyz/jubao/view/20201003',
-          title: '2020年10月3日不文明行为备案',
+          href: 'http://www.anlan.xyz/jubao/view/20201006',
+          title: '2020年10月6日不文明行为备案',
           area: '空间3区，微信小程序1、4、8、10、11区',
         },
         {
