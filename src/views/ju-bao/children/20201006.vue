@@ -72,12 +72,6 @@ export default {
         },
         {
           area: '空间3区',
-          uid: '8271481',
-          img: 'http://www.anlan.xyz:8080/images/jubao/20201006/007.jpg',
-          times: '初犯',
-        },
-        {
-          area: '空间3区',
           uid: '8902869',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201006/008.jpg',
           times: '初犯',
