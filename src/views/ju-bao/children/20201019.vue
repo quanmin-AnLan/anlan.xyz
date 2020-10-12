@@ -35,6 +35,12 @@ export default {
           times: '初犯',
         },
         {
+          area: '空间3区',
+          uid: '5519278',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201019/005.jpg',
+          times: '初犯',
+        },
+        {
           area: '空间4区',
           uid: '5746177',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201019/003.jpg',
