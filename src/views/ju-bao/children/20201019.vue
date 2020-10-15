@@ -23,6 +23,12 @@ export default {
           times: '初犯',
         },
         {
+          area: '微信小程序1区',
+          uid: '20332115',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201019/010.jpg',
+          times: '第2次',
+        },
+        {
           area: '微信小程序10区',
           uid: '12304136',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201019/006.jpg',
@@ -53,6 +59,12 @@ export default {
           times: '初犯',
         },
         {
+          area: '空间3区',
+          uid: '6955989',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201019/009.jpg',
+          times: '初犯',
+        },
+        {
           area: '空间4区',
           uid: '5746177',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201019/003.jpg',
@@ -63,6 +75,18 @@ export default {
           uid: '5942672',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201019/007.jpg',
           times: '初犯',
+        },
+        {
+          area: '手Q区',
+          uid: '414787',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201019/011.jpg',
+          times: '初犯',
+        },
+        {
+          area: '手Q区',
+          uid: '711275',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201019/012.jpg',
+          times: '第2次',
         },
       ],
     };
