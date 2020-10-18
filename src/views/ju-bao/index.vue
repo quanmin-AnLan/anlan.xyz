@@ -103,6 +103,11 @@ export default {
           title: '2020年10月26日不文明行为备案',
           area: 'null',
         },
+        {
+          href: 'http://www.anlan.xyz/jubao/view/20201102',
+          title: '2020年11月2日不文明行为备案',
+          area: 'null',
+        },
       ],
     };
   },
