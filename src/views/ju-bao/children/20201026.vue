@@ -17,6 +17,12 @@ export default {
       day: '26',
       tableData: [
         {
+          area: '微信小程序1区',
+          uid: '76845246',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201026/008.jpg',
+          times: '初犯',
+        },
+        {
           area: '微信小程序3区',
           uid: '187711',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201026/006.jpg',
