@@ -70,6 +70,12 @@ export default {
           img: 'http://www.anlan.xyz:8080/images/jubao/20201026/005.jpg',
           times: '初犯',
         },
+        {
+          area: '空间4区',
+          uid: '6378893',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201026/010.jpg',
+          times: '初犯',
+        },
       ],
     };
   },
