@@ -90,9 +90,9 @@ export default {
         },
         {
           area: '空间2区',
-          uid: '5746177',
+          uid: '8136255',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201026/004.jpg',
-          times: '第2次',
+          times: '初犯',
         },
         {
           area: '空间3区',
