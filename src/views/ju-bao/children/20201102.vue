@@ -17,6 +17,12 @@ export default {
       day: '2',
       tableData: [
         {
+          area: '微信小程序1区',
+          uid: '6934552',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201102/004.jpg',
+          times: '初犯',
+        },
+        {
           area: '微信小程序10区',
           uid: '90865154',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201102/001.jpg',
@@ -27,6 +33,12 @@ export default {
           uid: '61803176',
           img: 'http://www.anlan.xyz:8080/images/jubao/20201102/002.jpg',
           times: '第2次',
+        },
+        {
+          area: '空间3区',
+          uid: '3557987',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201102/005.jpg',
+          times: '初犯',
         },
         {
           area: '空间4区',
