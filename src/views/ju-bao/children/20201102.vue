@@ -18,8 +18,8 @@ export default {
       tableData: [
         {
           area: '微信小程序1区',
-          uid: '6934552',
-          img: 'http://www.anlan.xyz:8080/images/jubao/20201102/004.jpg',
+          uid: '1505361',
+          img: 'http://www.anlan.xyz:8080/images/jubao/20201102/006.jpg',
           times: '初犯',
         },
         {
