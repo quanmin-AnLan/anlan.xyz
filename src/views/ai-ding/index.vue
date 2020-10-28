@@ -45,6 +45,7 @@ import Nav from './components/Nav.vue';
 import AlTable from '@/components/AlTable.vue';
 import AlPagination from '@/components/AlPagination.vue';
 import { questionList, ranking, struggle } from '@/api/api';
+import { imgUrl } from '@/api/img';
 export default {
   components: {
     Nav,
@@ -197,6 +198,7 @@ export default {
     this.rank();
     this.list();
     this.checkLocalStorage();
+    console.log(imgUrl(1));
   },
 };
 </script>
