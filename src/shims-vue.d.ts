@@ -4,5 +4,3 @@ declare module '*.vue' {
 }
 declare module 'qs';
 declare module 'js-cookie';
-declare module 'hmacsha1';
-declare module 'base64url';
