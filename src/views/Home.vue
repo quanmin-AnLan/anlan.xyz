@@ -27,13 +27,13 @@ export default {
   },
   data() {
     return {
-      imgurl: require('../assets/aiding.jpg'),
+      imgurl: 'http://img.anlan.xyz/aiding/yuanrenxue.jpg?imagelim',
       imgurls: [
-        require('../assets/aiding.jpg'),
+        'http://img.anlan.xyz/aiding/yuanrenxue.jpg?imagelim',
       ],
-      anlanUrl: require('../assets/anlan.jpg'),
+      anlanUrl: 'http://img.anlan.xyz/anlan.jpg?imagelim',
       anlanUrls: [
-        require('../assets/anlan.jpg'),
+        'http://img.anlan.xyz/anlan.jpg?imagelim',
       ],
     };
   },
