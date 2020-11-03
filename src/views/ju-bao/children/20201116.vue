@@ -14,13 +14,13 @@ export default {
     return {
       year: '2020',
       month: '11',
-      day: '9',
+      day: '16',
       tableData: [
         {
-          area: '微信小程序1区',
-          uid: '1691519',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1109/1.jpg?imagelim',
-          times: '初犯',
+          area: '你猜',
+          uid: '你猜',
+          img: 'http://img.anlan.xyz/null.jpg?imagelim',
+          times: '你猜',
         },
       ],
     };
