@@ -116,7 +116,7 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20201116',
           title: '2020年11月16日不文明行为备案',
-          area: 'null',
+          area: '空间4区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20201123',
