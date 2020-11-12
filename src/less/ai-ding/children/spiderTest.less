@@ -1,0 +1,43 @@
+.title-color {
+  background: #506fbc;
+  color: #fff;
+}
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  .left-container {
+    width: 30%;
+    margin-left: 30px;
+    .title {
+      text-align: left;
+      line-height: 47px;
+      padding-left: 30px;
+      .title-color;
+    }
+    .list {
+      .list-box {
+        text-align: left;
+        background-color: #fff;
+        .list-item {
+          line-height: 66px;
+          font-size: 14px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #f3f5f7;
+          padding-left: 30px;
+          &:hover {
+            background-color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+  .right-container {
+    background-color: #fff;
+    width: 60%;
+    margin-right: 30px;
+    /deep/ .is-leaf {
+      .title-color;
+    }
+  }
+}

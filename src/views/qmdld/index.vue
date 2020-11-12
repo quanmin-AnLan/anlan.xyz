@@ -45,18 +45,18 @@ export default {
       ],
       update: [
         {
+          href: 'http://txt.anlan.xyz/ledou/update/2020/1112.txt',
+          title: '【全民大乐斗】11月12日更新公告',
+          number: '1',
+        },
+        {
           href: 'http://txt.anlan.xyz/ledou/update/2020/1105.txt',
           title: '【全民大乐斗】11月5日更新公告',
-          number: '1',
+          number: '2',
         },
         {
           href: 'http://txt.anlan.xyz/ledou/update/2020/1029.txt',
           title: '【全民大乐斗】10月29日更新公告',
-          number: '2',
-        },
-        {
-          href: 'http://txt.anlan.xyz/ledou/update/2020/1022.txt',
-          title: '【全民大乐斗】10月22日更新公告',
           number: '3',
         },
       ],

@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav-left">
       <div class="logo">猿人学 Python V0.9</div>
-      <div class="tab" v-for="item in tabs" :key="item.props">{{item.value}}</div>
+      <div class="tab" v-for="item in tabs" :key="item.props" @click="router(item.props)">{{item.value}}</div>
       <div class="search-box">
         <div class="search-input">
           <el-input placeholder="搜索题目" v-model="searchvalue"></el-input>
@@ -39,6 +39,9 @@ export default {
         message: '因原网页无搜索功能，故搜索功能暂未开发',
         type: 'warning',
       });
+    },
+    router(url) {
+      this.$router.push({ path: "/aiding/" + url });
     },
   },
 };

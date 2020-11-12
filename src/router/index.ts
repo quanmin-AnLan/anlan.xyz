@@ -27,9 +27,20 @@ const routes: RouteConfig[] = [
     path: '/aiding',
     name: 'AiDing',
     component: () => import('../views/ai-ding/index.vue'),
+    redirect: '/aiding/spiderTest',
     meta: {
       title: '猿人学 Python - 反反爬虫练习平台 V0.1',
     },
+    children: [
+      {
+        path: '/aiding/spiderTest',
+        component: () => import('../views/ai-ding/children/spiderTest.vue'),
+      },
+      {
+        path: '/aiding/questionCenter',
+        component: () => import('../views/ai-ding/children/questionCenter.vue'),
+      },
+    ],
   },
   {
     path: '/jubao',
