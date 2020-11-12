@@ -20,7 +20,14 @@ module.exports = {
         pathRewrite: {
           '^/api': ''
         }
-      }
+      },
+      '/yyxApi':{
+        target: 'http://match.yuanrenxue.com/api',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/yyxApi': ''
+        }
+      },
     }
   },
   configureWebpack: config =>{

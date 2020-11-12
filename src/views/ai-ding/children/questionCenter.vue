@@ -41,7 +41,7 @@
 <script>
 import AlTable from '@/components/AlTable.vue';
 import AlPagination from '@/components/AlPagination.vue';
-import { questionList, ranking, struggle } from '@/api/api';
+import { questionList, ranking, struggle, yyxQuestion } from '@/api/api';
 export default {
   components: {
     AlTable,
@@ -69,24 +69,13 @@ export default {
           align: 'left',
         },
         {
-          prop: 'datatime',
-          label: '发布时间',
-          width: '150px',
-          sortable: 'sortable',
-        },
-        {
-          prop: 'diff',
+          prop: 'difficulty',
           label: '难度',
           width: '100px',
           sortable: 'sortable',
         },
         {
-          prop: 'pass_number',
-          label: '通关人数',
-          width: '80px',
-        },
-        {
-          prop: 'success',
+          prop: 'finish',
           label: '通关',
           width: '100px',
         },
@@ -119,9 +108,21 @@ export default {
       ],
       listData: [],
       colorMap: {
-        困难: '#ec4c47',
-        中等: '#ed7366',
-        简单: '#009975',
+        0: '#008000',
+        1: '#28bf28',
+        2: 'blue',
+        3: '#f00',
+        4: '#980000',
+      },
+      diffMap: {
+        0: '非常简单',
+        1: '简单',
+        2: '中等',
+        3: '困难',
+        4: '非常困难',
+      },
+      specialMap: {
+        1: '（第一届比赛题目）'
       },
       sortMap: {
         0: 'http://www.python-spider.com/static/crawl/assets/logo/top1.png',
@@ -132,17 +133,14 @@ export default {
   },
   methods: {
     question() {
-      questionList({page: this.currentPage, count: this.pageSize}).then((res) => {
-        this.total = res.allcount;
-        this.qaData = res.infos.map((item) => {
+      yyxQuestion({page: this.currentPage}).then((res) => {
+        this.qaData = res.data.map((item) => {
           return {
-            datatime: item.datatime.replace('T', ' '),
-            diff: item.diff,
-            colordiff: this.colorMap[item.diff],
-            href: item.href,
-            pass_number: item.pass_number,
-            success: item.success || '未登录',
-            title: item.title,
+            difficulty: this.diffMap[item.difficulty],
+            colordifficulty: this.colorMap[item.difficulty],
+            href: 'http://match.yuanrenxue.com/match/' + item.number,
+            finish: item.finish || '未登录',
+            title: item.title + this.specialMap[item.special],
             number: item.number,
             category: item.category,
           };

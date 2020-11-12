@@ -1,7 +1,9 @@
-import {get, post} from './http';
+import {adGet, adPost, yyxGet, yyxPost} from './http';
 
-export const questionList = (params: object) => get('/api/combat', params);
+export const questionList = (params: object) => adGet('/api/combat', params);
 
-export const ranking = (params: object = {}) => get('/challenge/api/ranking', params);
+export const ranking = (params: object = {}) => adGet('/challenge/api/ranking', params);
 
-export const struggle = (params: object = {}) => get('/challenge/api/struggle', params);
+export const struggle = (params: object = {}) => adGet('/challenge/api/struggle', params);
+
+export const yyxQuestion = (params: object) => yyxGet('/topicList', params);

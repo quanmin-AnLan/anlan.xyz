@@ -1,6 +1,5 @@
 import axios from 'axios';
 import QS from 'qs';
-axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 5000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 
@@ -13,9 +12,13 @@ axios.interceptors.response.use((res) => {
   },
 );
 
-export const get = (url: string, params: object) => {
+const ad = axios.create({
+  baseURL: '/api',
+});
+
+export const adGet = (url: string, params: object) => {
   return new Promise((resolve, reject) => {
-    axios.get(url, {
+    ad.get(url, {
       params,
     }).then((res) => {
       resolve(res.data);
@@ -25,9 +28,35 @@ export const get = (url: string, params: object) => {
   });
 };
 
-export const post = (url: string, params: object = {}) => {
+export const adPost = (url: string, params: object = {}) => {
   return new Promise((resolve, reject) => {
-    axios.post(url, QS.stringify(params)).then((res) => {
+    ad.post(url, QS.stringify(params)).then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err.data);
+    });
+  });
+};
+
+const yyx = axios.create({
+  baseURL: '/yyxApi',
+});
+
+export const yyxGet = (url: string, params: object) => {
+  return new Promise((resolve, reject) => {
+    yyx.get(url, {
+      params,
+    }).then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err.data);
+    });
+  });
+};
+
+export const yyxPost = (url: string, params: object = {}) => {
+  return new Promise((resolve, reject) => {
+    yyx.post(url, QS.stringify(params)).then((res) => {
       resolve(res.data);
     }).catch((err) => {
       reject(err.data);
