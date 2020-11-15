@@ -31,7 +31,7 @@ export default {
         {
           area: '微信小程序11区',
           uid: '44420147',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/2.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/1.jpg?imagelim',
           times: '第2次',
         },
         {
@@ -43,7 +43,7 @@ export default {
         {
           area: '微信小程序11区',
           uid: '77755151',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/6.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/5.jpg?imagelim',
           times: '初犯',
         },
         {
@@ -59,15 +59,27 @@ export default {
           times: '初犯',
         },
         {
+          area: '空间2区',
+          uid: '5517170',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/11.jpg?imagelim',
+          times: '第2次',
+        },
+        {
           area: '空间4区',
           uid: '27940108',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/1.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/2.jpg?imagelim',
           times: '第2次',
         },
         {
           area: '空间4区',
           uid: '4553882',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/5.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/6.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '空间4区',
+          uid: '1103084',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1116/10.jpg?imagelim',
           times: '初犯',
         },
       ],
