@@ -22,6 +22,24 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1123/1.jpg?imagelim',
           times: '第3次',
         },
+        {
+          area: '空间1区',
+          uid: '4102414',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1123/2.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '手Q区',
+          uid: '135376',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1123/3.jpg?imagelim',
+          times: '组队违规，直封3天',
+        },
+        {
+          area: '手Q区',
+          uid: '6202127',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1123/4.jpg?imagelim',
+          times: '第2次',
+        },
       ],
     };
   },
