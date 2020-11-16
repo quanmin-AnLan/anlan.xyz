@@ -7,3 +7,5 @@ export const ranking = (params: object = {}) => adGet('/challenge/api/ranking', 
 export const struggle = (params: object = {}) => adGet('/challenge/api/struggle', params);
 
 export const yyxQuestion = (params: object) => yyxGet('/topicList', params);
+
+export const useRanking = (params: object = {}) => yyxGet('/useranking', params);

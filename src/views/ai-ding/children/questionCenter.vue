@@ -5,12 +5,6 @@
         <div class="title">英雄排行榜</div>
         <al-table :tableData="rankData" :headerSet="rankSet"></al-table>
       </section>
-      <section class="list">
-        <div class="title">奋战中的勇士</div>
-        <div v-for="item in listData" :key="item.sort" class="list-box">
-          <div class="list-item">勇士【{{item.nick}}】于{{item.last_finish_time}}通过了第{{item.number}}关！</div>
-        </div>
-      </section>
     </section>
     <section class="middle-container">
       <al-table :tableData="qaData" :headerSet="qaSet"></al-table>
@@ -24,10 +18,6 @@
       </al-pagination>
     </section>
     <section class="right-container">
-      <section class="rank">
-        <div class="title">数据总览</div>
-        <al-table :tableData="rankData" :headerSet="rankSet"></al-table>
-      </section>
       <section class="list">
         <div class="title">题目总览</div>
         <div v-for="item in listData" :key="item.sort" class="list-box">
@@ -41,7 +31,7 @@
 <script>
 import AlTable from '@/components/AlTable.vue';
 import AlPagination from '@/components/AlPagination.vue';
-import { questionList, ranking, struggle, yyxQuestion } from '@/api/api';
+import { questionList, ranking, struggle, yyxQuestion, useRanking } from '@/api/api';
 export default {
   components: {
     AlTable,
@@ -87,23 +77,22 @@ export default {
       rankData: [],
       rankSet: [
         {
-          prop: 'nick',
-          label: '英雄昵称',
+          prop: 'number',
+          label: '排行',
         },
         {
-          prop: 'number',
+          prop: 'nickname',
+          label: '昵称',
+        },
+        {
+          prop: 'challenge_number',
           label: '通关数',
           width: '100px',
         },
         {
-          prop: 'last_finish_time',
+          prop: 'finish_time',
           label: '通关日期',
           width: '150px',
-        },
-        {
-          prop: 'sort',
-          label: '排行',
-          width: '100px',
         },
       ],
       listData: [],
@@ -122,7 +111,8 @@ export default {
         4: '非常困难',
       },
       specialMap: {
-        1: '（第一届比赛题目）'
+        1: '#c13513',
+        2: '#13c111',
       },
       sortMap: {
         0: 'http://www.python-spider.com/static/crawl/assets/logo/top1.png',
@@ -134,13 +124,15 @@ export default {
   methods: {
     question() {
       yyxQuestion({page: this.currentPage}).then((res) => {
+        this.total = res.all_number;
         this.qaData = res.data.map((item) => {
           return {
             difficulty: this.diffMap[item.difficulty],
             colordifficulty: this.colorMap[item.difficulty],
             href: 'http://match.yuanrenxue.com/match/' + item.number,
             finish: item.finish || '未登录',
-            title: item.title + this.specialMap[item.special],
+            title: item.title,
+            colorcategory: this.specialMap[item.special],
             number: item.number,
             category: item.category,
           };
@@ -148,13 +140,14 @@ export default {
       });
     },
     rank() {
-      ranking().then((res) => {
-        this.rankData = res.data.map((item) => {
+      useRanking().then((res) => {
+        const data = res.rank.slice(0, 12);
+        this.rankData = data.map((item) => {
           return {
-            nick: item.nick || 'null',
-            number: item.number,
-            last_finish_time: item.last_finish_time.replace('T', ' '),
-            sort: this.sortMap[res.data.indexOf(item)] || '',
+            nickname: item.nickname || 'null',
+            challenge_number: item.challenge_number + '/13',
+            finish_time: item.finish_time.replace('T', ' '),
+            number: data.indexOf(item) + 1,
           };
         });
       });
