@@ -17,10 +17,16 @@ export default {
       day: '30',
       tableData: [
         {
-          area: '你猜',
-          uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
-          times: '你猜',
+          area: '微信小程序1区',
+          uid: '29555127',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/2.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '空间3区',
+          uid: '2974475',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/1.jpg?imagelim',
+          times: '初犯',
         },
       ],
     };
