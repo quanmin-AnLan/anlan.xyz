@@ -28,6 +28,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/1.jpg?imagelim',
           times: '初犯',
         },
+        {
+          area: '空间3区',
+          uid: '3476678',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/3.jpg?imagelim',
+          times: '初犯',
+        },
       ],
     };
   },
