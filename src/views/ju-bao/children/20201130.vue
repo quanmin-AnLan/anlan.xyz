@@ -23,6 +23,24 @@ export default {
           times: '初犯',
         },
         {
+          area: '微信小程序3区',
+          uid: '2265493',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/6.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序9区',
+          uid: '86313131',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/5.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序10区',
+          uid: '27915136',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/4.jpg?imagelim',
+          times: '初犯',
+        },
+        {
           area: '空间3区',
           uid: '2974475',
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1130/1.jpg?imagelim',
