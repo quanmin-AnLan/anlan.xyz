@@ -11,6 +11,11 @@ const routes: RouteConfig[] = [
     component: () => import('../views/Home.vue'),
   },
   {
+    path: '/question',
+    name: 'Question',
+    component: () => import('../views/question.vue'),
+  },
+  {
     path: '/qmdld',
     name: 'qmdld',
     component: () => import('../views/qmdld/index.vue'),
@@ -141,6 +146,14 @@ const routes: RouteConfig[] = [
       {
         path: '/jubao/view/20201214',
         component: () => import('../views/ju-bao/children/20201214.vue'),
+      },
+      {
+        path: '/jubao/view/20201221',
+        component: () => import('../views/ju-bao/children/20201221.vue'),
+      },
+      {
+        path: '/jubao/view/20201228',
+        component: () => import('../views/ju-bao/children/20201228.vue'),
       },
     ],
   },
