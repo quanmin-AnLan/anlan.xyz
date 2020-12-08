@@ -17,10 +17,28 @@ export default {
       day: '14',
       tableData: [
         {
-          area: '你猜',
-          uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
-          times: '你猜',
+          area: '空间3区',
+          uid: '6329984',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/2.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '空间3区',
+          uid: '3557987',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/3.jpg?imagelim',
+          times: '第2次',
+        },
+        {
+          area: '空间4区',
+          uid: '4014885',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/1.jpg?imagelim',
+          times: '第2次',
+        },
+        {
+          area: 'QQ小程序区',
+          uid: '7022181',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/4.jpg?imagelim',
+          times: '初犯',
         },
       ],
     };

@@ -46,7 +46,7 @@ export default {
       update: [
         {
           href: 'http://txt.anlan.xyz/ledou/update/2020/1203-1.txt',
-          title: '【全民大乐斗】11月12日更新公告',
+          title: '【全民大乐斗】12月3日更新公告',
           number: '1',
         },
         {
