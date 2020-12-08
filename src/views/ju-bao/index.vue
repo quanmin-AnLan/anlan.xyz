@@ -136,7 +136,7 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20201214',
           title: '2020年12月14日不文明行为备案',
-          area: 'QQ小程序区，空间3、4区',
+          area: 'QQ小程序区，空间3、4区，微信小程序1区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20201221',

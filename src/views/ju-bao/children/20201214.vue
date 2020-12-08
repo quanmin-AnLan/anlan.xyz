@@ -17,6 +17,12 @@ export default {
       day: '14',
       tableData: [
         {
+          area: '微信小程序1区',
+          uid: '6974712',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/5.jpg?imagelim',
+          times: '第2次',
+        },
+        {
           area: '空间3区',
           uid: '6329984',
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/2.jpg?imagelim',
@@ -32,6 +38,12 @@ export default {
           area: '空间4区',
           uid: '4014885',
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/1.jpg?imagelim',
+          times: '第2次',
+        },
+        {
+          area: '空间4区',
+          uid: '9684772',
+          img: 'http://img.anlan.xyz/ledou/jubao/2020/1214/6.jpg?imagelim',
           times: '第2次',
         },
         {
