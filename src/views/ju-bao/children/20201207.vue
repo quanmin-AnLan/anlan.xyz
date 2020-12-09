@@ -64,12 +64,6 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2020/1207/8.jpg?imagelim',
           times: '初犯',
         },
-        {
-          area: '手Q区',
-          uid: '405901',
-          img: 'http://img.anlan.xyz/ledou/jubao/2020/1207/9.jpg?imagelim',
-          times: '初犯',
-        },
       ],
     };
   },
