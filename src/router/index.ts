@@ -56,6 +56,11 @@ const routes: RouteConfig[] = [
     },
   },
   {
+    path: '/39sort',
+    name: 'Sort',
+    component: () => import('../views/sort.vue'),
+  },
+  {
     path: '/jubao/view',
     component: () => import('../views/ju-bao/children/index.vue'),
     children: [
