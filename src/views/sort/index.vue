@@ -2,13 +2,11 @@
   <section class="main">
     <header>【线下活动】等级武林区排位活动</header>
     <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
-    <Home></Home>
   </section>
 </template>
 
 <script>
 import AlTable from '@/components/AlTable.vue';
-import Home from '@/components/GoHome.vue';
 export default {
   components: {
     AlTable,
@@ -24,19 +22,19 @@ export default {
       ],
       tableData: [
         {
-          href: 'http://www.anlan.xyz/jubao/view/20200730',
+          href: 'http://www.anlan.xyz/sort/view/1-59-sky',
           title: '第一届59级天榜排位公示',
         },
         {
-          href: 'http://www.anlan.xyz/jubao/view/20200803',
+          href: 'http://www.anlan.xyz/sort/view/1-59-land',
           title: '第一届59级地榜排位公示',
         },
         {
-          href: 'http://www.anlan.xyz/jubao/view/20200810',
+          href: 'http://www.anlan.xyz/sort/view/1-39-sky',
           title: '第一届39级天榜排位公示',
         },
         {
-          href: 'http://www.anlan.xyz/jubao/view/20200813',
+          href: 'http://www.anlan.xyz/sort/view/1-39-land',
           title: '第一届39级地榜排位公示',
         },
       ],
