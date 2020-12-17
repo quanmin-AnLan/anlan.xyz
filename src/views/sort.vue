@@ -1,9 +1,9 @@
 <template>
   <section class="main-container">
     <section class="sort-container">
-      <div v-for="item in sortData" :key="item.sort" class="sort-item">
-        <div class="sort-title">{{ item.sort }}</div>
-        <div class="sort-area">{{item.area}}</div>
+      <div v-for="(item, index) in sortData" :key="index" class="sort-item">
+        <div class="sort-title">{{ index + 1 }}号</div>
+        <div class="sort-area">{{item.area}}区</div>
         <div class="sort-name">{{ item.name }}</div>
       </div>
     </section>
@@ -16,187 +16,154 @@ export default {
     return {
       sortData: [
         {
-          sort: '1号',
-          area: '空1',
+          area: '空间1',
           name: '有点白',
         },
         {
-          sort: '2号',
-          area: '空1',
-          name: '有点白',
+          area: '空间1',
+          name: '有点黑',
         },
         {
-          sort: '3号',
-          area: '空1',
-          name: '有点白',
+          area: '空间1',
+          name: '有点甜',
         },
         {
-          sort: '4号',
-          area: '空1',
-          name: '有点白',
+          area: '空间1',
+          name: '有点虎',
         },
         {
-          sort: '5号',
-          area: '空1',
-          name: '有点白',
+          area: '空间1',
+          name: '杨广庆',
         },
         {
-          sort: '6号',
-          area: '空1',
-          name: '有点白',
+          area: '空间2',
+          name: '有点苏',
         },
         {
-          sort: '7号',
-          area: '空1',
-          name: '有点白',
+          area: '空间2',
+          name: '小金刚',
         },
         {
-          sort: '8号',
-          area: '空1',
-          name: '有点白',
+          area: '空间2',
+          name: '天枢星',
         },
         {
-          sort: '9号',
-          area: '空1',
-          name: '有点白',
+          area: '空间2',
+          name: '天天',
         },
         {
-          sort: '10号',
-          area: '空1',
-          name: '有点白',
+          area: '空间2',
+          name: '空杯',
         },
         {
-          sort: '11号',
-          area: '空1',
-          name: '有点白',
+          area: '空间3',
+          name: '七七',
         },
         {
-          sort: '12号',
-          area: '空1',
-          name: '有点白',
+          area: '空间3',
+          name: '白齐',
         },
         {
-          sort: '13号',
-          area: '空1',
-          name: '有点白',
+          area: '空间4',
+          name: '宁亡',
         },
         {
-          sort: '14号',
-          area: '空1',
-          name: '有点白',
+          area: '空间4',
+          name: '-Q',
         },
         {
-          sort: '15号',
-          area: '空1',
-          name: '有点白',
+          area: '微信1',
+          name: '有点卡',
         },
         {
-          sort: '16号',
-          area: '空1',
-          name: '有点白',
+          area: '微信3',
+          name: '有点慢',
         },
         {
-          sort: '17号',
-          area: '空1',
-          name: '有点白',
+          area: '微信6',
+          name: '有点帅',
         },
         {
-          sort: '18号',
-          area: '空1',
-          name: '有点白',
+          area: '微信7',
+          name: '有点皮',
         },
         {
-          sort: '19号',
-          area: '空1',
-          name: '有点白',
+          area: '微信7',
+          name: '有点水',
         },
         {
-          sort: '20号',
-          area: '空1',
-          name: '有点白',
+          area: '微信8',
+          name: 'Marry',
         },
         {
-          sort: '21号',
-          area: '空1',
-          name: '有点白',
+          area: '微信9',
+          name: '戒酒的李白',
         },
         {
-          sort: '22号',
-          area: '空1',
-          name: '有点白',
+          area: '微信9',
+          name: '霜冷九州斩',
         },
         {
-          sort: '23号',
-          area: '空1',
-          name: '有点白',
+          area: '微信9',
+          name: '执念',
         },
         {
-          sort: '24号',
-          area: '空1',
-          name: '有点白',
+          area: '微信10',
+          name: '有点纯',
         },
         {
-          sort: '25号',
-          area: '空1',
-          name: '有点白',
+          area: '微信10',
+          name: '有点坑',
         },
         {
-          sort: '26号',
-          area: '空1',
-          name: '有点白',
+          area: '微信10',
+          name: '东方',
         },
         {
-          sort: '27号',
-          area: '空1',
-          name: '有点白',
+          area: '微信10',
+          name: '梦天帝',
         },
         {
-          sort: '28号',
-          area: '空1',
-          name: '有点白',
+          area: 'QQ小程序',
+          name: '有点肉',
         },
         {
-          sort: '29号',
-          area: '空1',
-          name: '有点白',
+          area: 'QQ小程序',
+          name: '有点紫',
         },
         {
-          sort: '30号',
-          area: '空1',
-          name: '有点白',
+          area: 'QQ小程序',
+          name: 'Sasuke',
         },
         {
-          sort: '31号',
-          area: '空1',
-          name: '有点白',
+          area: 'QQ小程序',
+          name: '我不后悔',
         },
         {
-          sort: '32号',
-          area: '空1',
-          name: '有点白',
+          area: '手Q',
+          name: '李时珍',
         },
         {
-          sort: '33号',
-          area: '空1',
-          name: '有点白',
+          area: '手Q',
+          name: '夏目',
         },
         {
-          sort: '34号',
-          area: '空1',
-          name: '有点白',
+          area: '手Q',
+          name: '勿念花',
         },
         {
-          sort: '35号',
-          area: '空1',
-          name: '有点白',
+          area: '手Q',
+          name: '祈禾',
         },
         {
-          sort: '36号',
-          area: '空1',
-          name: '有点白',
+          area: '手Q',
+          name: '五行缺钱',
         },
       ],
     };
+  },
+  mounted() {
+    document.querySelector('.nav-main').style.display = 'none';
   },
 };
 </script>
@@ -204,6 +171,7 @@ export default {
 <style lang="less" scoped>
 .main-container {
   width: 100%;
+  margin-top: -50px;
   background: linear-gradient(-45deg,#abcdef,#F9E79F, #ffc0cb,#afeeee);
   background-size: 400% 400%;
   animation: Gradient 8s ease infinite;
@@ -228,8 +196,10 @@ export default {
   justify-content: space-between;
 }
 .sort-item {
-  width: 16%;
-  height: 16%;
+  width: 25%;
+  height: 11.11%;
+  border: 1px solid #b30d34;
+  box-sizing: border-box;
 }
 .sort-title, .sort-name, .sort-area {
   display: flex;
