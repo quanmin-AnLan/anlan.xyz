@@ -64,9 +64,6 @@ const routes: RouteConfig[] = [
     path: '/sort',
     name: 'Sort',
     component: () => import('../views/sort/index.vue'),
-    meta: {
-      title: '安澜网 - 稽查中心',
-    },
   },
   {
     path: '/sort/view',

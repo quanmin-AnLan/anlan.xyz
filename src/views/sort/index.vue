@@ -10,7 +10,6 @@ import AlTable from '@/components/AlTable.vue';
 export default {
   components: {
     AlTable,
-    Home,
   },
   data() {
     return {
