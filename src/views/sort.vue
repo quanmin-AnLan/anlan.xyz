@@ -1,9 +1,11 @@
 <template>
-  <section class="sort-container">
-    <div v-for="item in sortData" :key="item.sort" class="sort-item">
-      <div class="sort-title">{{ item.sort }}</div>
-      <div class="sort-name">{{ item.name }}</div>
-    </div>
+  <section class="main-container">
+    <section class="sort-container">
+      <div v-for="item in sortData" :key="item.sort" class="sort-item">
+        <div class="sort-title">{{ item.sort }}</div>
+        <div class="sort-name">{{ item.name }}</div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -156,23 +158,41 @@ export default {
           sort: '36号',
           name: '有点白',
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="less" scoped>
+.main-container {
+  width: 100%;
+  background: linear-gradient(-45deg,#abcdef,#F9E79F, #ffc0cb,#afeeee);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
 .sort-container {
+  margin: 0 auto;
   display: flex;
-  width: 600px;
+  width: 100%;
   flex-wrap: wrap;
-  height: 600px;
-  margin-top: 50px;
+  height: 100%;
+  justify-content: space-between;
 }
 .sort-item {
-  width: 100px;
-  height: 100px;
+  width: 16%;
+  height: 8%;
 }
 .sort-title, .sort-name {
   height: 50px;
