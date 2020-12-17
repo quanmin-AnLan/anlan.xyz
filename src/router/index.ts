@@ -61,6 +61,36 @@ const routes: RouteConfig[] = [
     component: () => import('../views/sort.vue'),
   },
   {
+    path: '/sort',
+    name: 'Sort',
+    component: () => import('../views/sort/index.vue'),
+    meta: {
+      title: '安澜网 - 稽查中心',
+    },
+  },
+  {
+    path: '/sort/view',
+    component: () => import('../views/sort/children/index.vue'),
+    children: [
+      {
+        path: '/sort/view/1-59-sky',
+        component: () => import('../views/sort/children/1-59-sky.vue'),
+      },
+      {
+        path: '/sort/view/1-59-land',
+        component: () => import('../views/sort/children/1-59-land.vue'),
+      },
+      {
+        path: '/sort/view/1-39-sky',
+        component: () => import('../views/sort/children/1-39-sky.vue'),
+      },
+      {
+        path: '/sort/view/1-39-land',
+        component: () => import('../views/sort/children/1-39-land.vue'),
+      },
+    ],
+  },
+  {
     path: '/jubao/view',
     component: () => import('../views/ju-bao/children/index.vue'),
     children: [
