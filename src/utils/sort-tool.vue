@@ -29,8 +29,8 @@ export default {
           width: '77px',
         },
         {
-          prop: 'uid',
-          label: 'uid',
+          prop: 'name',
+          label: '名字',
           width: '83px',
         },
         {
@@ -77,7 +77,7 @@ export default {
         return {
           rank: data.indexOf(item) + 1,
           area: item.area,
-          uid: item.uid,
+          name: item.name,
           img: 'http://img.anlan.xyz/ledou/rank/' + this.times + '/'
                 + this.modelMap[this.model] + '-' + (this.level === '全等' ? 0 : this.level) + '-' + (data.indexOf(item) + 1)
                 + '.jpg?imagelim',
