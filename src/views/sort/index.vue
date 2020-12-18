@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <header>【线下活动】等级武林区排位活动</header>
+    <header>【线下活动】等级武林排位</header>
     <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
   </section>
 </template>

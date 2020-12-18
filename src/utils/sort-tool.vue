@@ -21,14 +21,17 @@ export default {
         {
           prop: 'rank',
           label: '排名',
+          width: '53px',
         },
         {
           prop: 'area',
           label: '区服',
+          width: '77px',
         },
         {
           prop: 'uid',
           label: 'uid',
+          width: '83px',
         },
         {
           prop: 'img',
