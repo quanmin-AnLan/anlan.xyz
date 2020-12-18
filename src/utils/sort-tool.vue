@@ -26,12 +26,12 @@ export default {
         {
           prop: 'area',
           label: '区服',
-          width: '77px',
+          width: '67px',
         },
         {
           prop: 'name',
           label: '名字',
-          width: '83px',
+          width: '93px',
         },
         {
           prop: 'img',

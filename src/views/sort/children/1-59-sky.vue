@@ -31,7 +31,7 @@ export default {
           name: '依赖',
         },
         {
-          area: 'qq小程序区',
+          area: 'qq小程序',
           name: '无畏',
         },
         {
@@ -43,7 +43,7 @@ export default {
           name: '天外飞星',
         },
         {
-          area: 'qq小程序区',
+          area: 'qq小程序',
           name: '灭绝丶',
         },
         {
@@ -119,7 +119,7 @@ export default {
           name: '石头脑袋',
         },
         {
-          area: 'qq小程序区',
+          area: 'qq小程序',
           name: '雨落',
         },
         {
@@ -147,7 +147,7 @@ export default {
           name: '。',
         },
         {
-          area: 'qq小程序区',
+          area: 'qq小程序',
           name: '墨黑',
         },
         {
@@ -155,7 +155,7 @@ export default {
           name: '秋容',
         },
         {
-          area: 'qq小程序区',
+          area: 'qq小程序',
           name: '爻*柒',
         },
         {
