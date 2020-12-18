@@ -38,6 +38,11 @@ export default {
           label: '本届战力图',
         },
       ],
+      modelMap: {
+        天: '1',
+        地: '2',
+        强: '3',
+      },
     };
   },
   props: {
@@ -73,7 +78,9 @@ export default {
           rank: data.indexOf(item) + 1,
           area: item.area,
           uid: item.uid,
-          img: item.img,
+          img: 'http://img.anlan.xyz/ledou/rank/' + this.times + '/'
+                + this.modelMap[this.model] + '-' + (this.level === '全等' ? 0 : this.level) + '-' + (data.indexOf(item) + 1)
+                + '.jpg?imagelim',
         };
       });
     },

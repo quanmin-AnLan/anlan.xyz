@@ -21,52 +21,42 @@ export default {
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
         {
           area: '你猜',
           uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg?imagelim',
         },
       ],
     };
