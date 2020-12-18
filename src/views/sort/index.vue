@@ -36,6 +36,10 @@ export default {
           href: 'http://www.anlan.xyz/sort/view/1-39-land',
           title: '第一届39级地榜排位公示',
         },
+        {
+          href: 'http://www.anlan.xyz/sort/view/1-strong',
+          title: '第一届全等级强榜排位公示',
+        },
       ],
     };
   },

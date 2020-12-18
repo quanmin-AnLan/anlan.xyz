@@ -85,6 +85,10 @@ const routes: RouteConfig[] = [
         path: '/sort/view/1-39-land',
         component: () => import('../views/sort/children/1-39-land.vue'),
       },
+      {
+        path: '/sort/view/1-strong',
+        component: () => import('../views/sort/children/1-strong.vue'),
+      },
     ],
   },
   {

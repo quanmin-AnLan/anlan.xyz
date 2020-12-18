@@ -13,9 +13,9 @@ export default {
   data() {
     return {
       times: '1',
-      level: '39',
-      model: '天',
-      author: '微信1区有点白',
+      level: '全等',
+      model: '强',
+      author: 'qq小程序灭绝',
       checker: 'qq小程序灭绝',
       tableData: [
         {
