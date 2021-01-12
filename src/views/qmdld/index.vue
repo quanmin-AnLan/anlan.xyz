@@ -6,6 +6,7 @@
       </section>
       <section class="right-container">
         <el-button @click="$router.push('/jubao')">稽查中心</el-button>
+        <el-button @click="$router.push('/linli')">琳璃专栏</el-button>
         <!-- <el-button @click="$router.push('/draw')">抽奖中心</el-button> -->
         <!-- <el-button @click="random(arr.slice(0, 129), 20)">投票抽奖</el-button> -->
       </section>

@@ -29,6 +29,14 @@ const routes: RouteConfig[] = [
     },
   },
   {
+    path: '/linli',
+    name: 'Linli',
+    component: () => import('../views/qmdld/linli.vue'),
+    meta: {
+      title: '安澜网 - 琳璃专栏',
+    },
+  },
+  {
     path: '/aiding',
     name: 'AiDing',
     component: () => import('../views/ai-ding/index.vue'),
