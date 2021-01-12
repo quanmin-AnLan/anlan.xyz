@@ -29,77 +29,77 @@
           {
             id: 1,
             title: '强化',
-            href: 'http://img.anlan.xyz/ledou/linli/qianghua.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/qianghua.png?imageslim',
           },
           {
             id: 2,
             title: '精炼',
-            href: 'http://img.anlan.xyz/ledou/linli/jinglian.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/jinglian.png?imageslim',
           },
           {
             id: 3,
             title: '密卷',
-            href: 'http://img.anlan.xyz/ledou/linli/mijuan.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/mijuan.png?imageslim',
           },
           {
             id: 4,
             title: '召唤兽',
-            href: 'http://img.anlan.xyz/ledou/linli/zhaohuanshou.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/zhaohuanshou.png?imageslim',
           },
           {
             id: 5,
             title: '经脉',
-            href: 'http://img.anlan.xyz/ledou/linli/jingmai.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/jingmai.png?imageslim',
           },
           {
             id: 6,
             title: '帮派',
-            href: 'http://img.anlan.xyz/ledou/linli/bangpai.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/bangpai.png?imageslim',
           },
           {
             id: 7,
             title: '修炼管',
-            href: 'http://img.anlan.xyz/ledou/linli/xiu.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/xiu.png?imageslim',
           },
           {
             id: 8,
             title: '遗迹',
-            href: 'http://img.anlan.xyz/ledou/linli/yiji.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/yiji.png?imageslim',
           },
           {
             id: 9,
             title: '押镖',
-            href: 'http://img.anlan.xyz/ledou/linli/yabiao.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/yabiao.png?imageslim',
           },
           {
             id: 10,
             title: '华山论剑',
-            href: 'http://img.anlan.xyz/ledou/linli/huashan.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/huashan.png?imageslim',
           },
           {
             id: 11,
             title: '结界',
-            href: 'http://img.anlan.xyz/ledou/linli/fuwen.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/fuwen.png?imageslim',
           },
           {
             id: 12,
             title: '法阵',
-            href: 'http://img.anlan.xyz/ledou/linli/fazhen.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/fazhen.png?imageslim',
           },
           {
             id: 13,
             title: '剑魂',
-            href: 'http://img.anlan.xyz/ledou/linli/jianhun.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/jianhun.png?imageslim',
           },
           {
             id: 14,
             title: '游历',
-            href: 'http://img.anlan.xyz/ledou/linli/youli.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/youli.png?imageslim',
           },
           {
             id: 15,
             title: '随从',
-            href: 'http://img.anlan.xyz/ledou/linli/suicong.png?imageslim'
+            href: 'http://img.anlan.xyz/ledou/linli/suicong.png?imageslim',
           },
         ],
         isShow: false,

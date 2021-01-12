@@ -41,7 +41,7 @@ export default {
       });
     },
     router(url) {
-      this.$router.push({ path: "/aiding/" + url });
+      this.$router.push({ path: '/aiding/' + url });
     },
   },
 };

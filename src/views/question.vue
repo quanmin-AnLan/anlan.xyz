@@ -8,7 +8,7 @@
 import AlTable from '@/components/AlTable.vue';
 export default {
   components: {
-    AlTable
+    AlTable,
   },
   data() {
     return {

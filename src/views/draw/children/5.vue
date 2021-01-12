@@ -36,8 +36,8 @@ export default {
       }
       const three = this.threeData.join(',') || '无';
       const five = this.fiveData.join(',') || '无';
-      console.log('连续猜中3次：', three);
-      console.log('连续猜中5次：', five);
+      // console.log('连续猜中3次：', three);
+      // console.log('连续猜中5次：', five);
     },
   },
   mounted() {
