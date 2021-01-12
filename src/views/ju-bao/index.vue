@@ -156,7 +156,7 @@ export default {
         {
           href: 'http://www.anlan.xyz/jubao/view/20210111',
           title: '2021年1月11日不文明行为备案',
-          area: '手Q区、空间4区、微信小程序10区',
+          area: '手Q区、空间3、4区、微信小程序1、3、4、7、10区',
         },
         {
           href: 'http://www.anlan.xyz/jubao/view/20210118',
