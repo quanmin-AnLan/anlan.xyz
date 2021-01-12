@@ -79,8 +79,8 @@ export default {
           area: item.area,
           name: item.name,
           img: 'http://img.anlan.xyz/ledou/rank/' + this.times + '/'
-                + this.modelMap[this.model] + '-' + (this.level === '全等' ? 0 : this.level) + '-' + (data.indexOf(item) + 1)
-                + '.jpg?imagelim',
+            + this.modelMap[this.model] + '-' + (this.level === '全等' ? 0 : this.level) + '-' + (data.indexOf(item) + 1)
+            + '.jpg?imagelim',
         };
       });
     },
