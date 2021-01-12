@@ -49,7 +49,7 @@
           {
             id: 5,
             title: '经脉',
-            href: 'http://img.anlan.xyz/ledou/linli/jingmai.png?imageslim',
+            href: 'http://img.anlan.xyz/ledou/linli/jingmai.jpg?imageslim',
           },
           {
             id: 6,
@@ -94,12 +94,12 @@
           {
             id: 14,
             title: '游历',
-            href: 'http://img.anlan.xyz/ledou/linli/youli.png?imageslim',
+            href: 'http://img.anlan.xyz/ledou/linli/youli.jpg?imageslim',
           },
           {
             id: 15,
             title: '随从',
-            href: 'http://img.anlan.xyz/ledou/linli/suicong.png?imageslim',
+            href: 'http://img.anlan.xyz/ledou/linli/suicong.jpg?imageslim',
           },
         ],
         isShow: false,
