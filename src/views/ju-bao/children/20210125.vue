@@ -37,7 +37,7 @@ export default {
         {
           area: '微信小程序11区',
           uid: '57865126',
-          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/2.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/1.jpg?imagelim',
           times: '初犯',
         },
         {
@@ -47,9 +47,21 @@ export default {
           times: '初犯',
         },
         {
+          area: '微信小程序11区',
+          uid: '65193147',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/7.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '微信小程序11区',
+          uid: '71101173',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/8.jpg?imagelim',
+          times: '初犯',
+        },
+        {
           area: '空间4区',
           uid: '5362086',
-          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/1.jpg?imagelim',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0125/2.jpg?imagelim',
           times: '初犯',
         },
       ],
