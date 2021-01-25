@@ -82,16 +82,8 @@ const routes: RouteConfig[] = [
         component: () => import('../views/sort/children/1-59-sky.vue'),
       },
       {
-        path: '/sort/view/1-59-land',
-        component: () => import('../views/sort/children/1-59-land.vue'),
-      },
-      {
         path: '/sort/view/1-39-sky',
         component: () => import('../views/sort/children/1-39-sky.vue'),
-      },
-      {
-        path: '/sort/view/1-39-land',
-        component: () => import('../views/sort/children/1-39-land.vue'),
       },
       {
         path: '/sort/view/1-strong',
