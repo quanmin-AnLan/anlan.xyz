@@ -25,16 +25,8 @@ export default {
           title: '第一届59级天榜排位公示',
         },
         {
-          href: 'http://www.anlan.xyz/sort/view/1-59-land',
-          title: '第一届59级地榜排位公示',
-        },
-        {
           href: 'http://www.anlan.xyz/sort/view/1-39-sky',
           title: '第一届39级天榜排位公示',
-        },
-        {
-          href: 'http://www.anlan.xyz/sort/view/1-39-land',
-          title: '第一届39级地榜排位公示',
         },
         {
           href: 'http://www.anlan.xyz/sort/view/1-strong',
