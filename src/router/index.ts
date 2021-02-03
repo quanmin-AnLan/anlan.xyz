@@ -215,6 +215,14 @@ const routes: RouteConfig[] = [
         path: '/jubao/view/20210208',
         component: () => import('../views/ju-bao/children/20210208.vue'),
       },
+      {
+        path: '/jubao/view/20210222',
+        component: () => import('../views/ju-bao/children/20210222.vue'),
+      },
+      {
+        path: '/jubao/view/20210301',
+        component: () => import('../views/ju-bao/children/20210301.vue'),
+      },
     ],
   },
   // {
