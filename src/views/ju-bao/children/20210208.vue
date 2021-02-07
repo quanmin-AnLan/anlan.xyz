@@ -22,6 +22,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0208/1.jpg?imagelim',
           times: '初犯',
         },
+        {
+          area: '微信小程序10区',
+          uid: '81642138',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0208/2.jpg?imagelim',
+          times: '初犯',
+        },
       ],
     };
   },
