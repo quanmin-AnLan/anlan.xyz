@@ -17,9 +17,9 @@ export default {
       day: '8',
       tableData: [
         {
-          area: '你猜',
-          uid: '你猜',
-          img: 'http://img.anlan.xyz/null.jpg',
+          area: '微信小程序1区',
+          uid: '9611781',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0208/1.jpg?imagelim',
           times: '初犯',
         },
       ],
