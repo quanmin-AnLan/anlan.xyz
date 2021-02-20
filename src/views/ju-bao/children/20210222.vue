@@ -46,6 +46,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0222/3.jpg?imagelim',
           times: '初犯',
         },
+        {
+          area: '微信小程序11区',
+          uid: '11455166',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0222/6.jpg?imagelim',
+          times: '初犯',
+        },
       ],
     };
   },
