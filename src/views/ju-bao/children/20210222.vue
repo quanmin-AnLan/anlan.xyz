@@ -58,6 +58,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0222/7.jpg?imagelim',
           times: '初犯',
         },
+        {
+          area: '微信H5区',
+          uid: '444516',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0222/8.jpg?imagelim',
+          times: '初犯',
+        },
       ],
     };
   },
