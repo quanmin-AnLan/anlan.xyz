@@ -22,6 +22,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0301/1.jpg?imagelim',
           times: '初犯',
         },
+        {
+          area: '空间4区',
+          uid: '5500975',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0301/2.jpg?imagelim',
+          times: '初犯',
+        },
       ],
     };
   },
