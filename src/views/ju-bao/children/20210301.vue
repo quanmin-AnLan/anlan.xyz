@@ -76,6 +76,12 @@ export default {
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0301/9.jpg?imagelim',
           times: '第2次',
         },
+        {
+          area: '空间4区',
+          uid: '2875687',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0301/6.jpg?imagelim',
+          times: '第2次',
+        },
       ],
     };
   },
