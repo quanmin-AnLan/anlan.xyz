@@ -84,7 +84,7 @@ export default {
         },
         {
           area: '空间2区',
-          name: '物思+++人非',
+          name: '物似+++人非',
         },
         {
           area: '微信1区',
