@@ -33,12 +33,12 @@ export default {
           title: '第一届全等级强榜排位公示',
         },
         {
-          href: 'http://www.anlan.xyz/sort/view/2-39-sky',
-          title: '第二届39级天榜排位公示',
-        },
-        {
           href: 'http://www.anlan.xyz/sort/view/2-59-sky',
           title: '第二届59级天榜排位公示',
+        },
+        {
+          href: 'http://www.anlan.xyz/sort/view/2-39-sky',
+          title: '第二届39级天榜排位公示',
         },
       ],
     };
