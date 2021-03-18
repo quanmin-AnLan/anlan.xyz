@@ -20,7 +20,7 @@ export default {
           area: '微信小程序1区',
           uid: '1209134',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0322/3.jpg?imagelim',
-          times: '初犯',
+          times: '第2次',
         },
         {
           area: '微信小程序10区',
