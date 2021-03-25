@@ -41,9 +41,27 @@ export default {
           times: '第3次',
         },
         {
+          area: '空间3区',
+          uid: '3557987',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0329/10.jpg?imagelim',
+          times: '第3次',
+        },
+        {
           area: '空间4区',
           uid: '1913693',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0329/6.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '空间4区',
+          uid: '7982991',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0329/8.jpg?imagelim',
+          times: '初犯',
+        },
+        {
+          area: '空间4区',
+          uid: '8565997',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0329/9.jpg?imagelim',
           times: '初犯',
         },
         {
