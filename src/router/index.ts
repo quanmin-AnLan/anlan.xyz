@@ -16,6 +16,11 @@ const routes: RouteConfig[] = [
     component: () => import('../views/question.vue'),
   },
   {
+    path: '/lisa',
+    name: 'Lisa',
+    component: () => import('../views/lisa/lisa.vue'),
+  },
+  {
     path: '/qmdld',
     name: 'qmdld',
     component: () => import('../views/qmdld/index.vue'),
