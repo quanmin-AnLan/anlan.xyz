@@ -110,7 +110,7 @@ export default {
       for (const item of this.userList) {
         if (this.userid === item) {
           Cookies.set('isUserLogin', item, {expires: 3 / 24});
-          this.$router.push({to: '/user'});
+          this.$router.push({path: '/user'});
           this.userShow = false;
         } else {
           this.$message({
