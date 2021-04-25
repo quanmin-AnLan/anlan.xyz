@@ -21,6 +21,19 @@ const routes: RouteConfig[] = [
     component: () => import('../views/lisa/lisa.vue'),
   },
   {
+    path: '/user',
+    name: 'User',
+    component: () => import('../views/userConfig.vue'),
+    beforeEnter(to, from, next) {
+      const isUserLogin: string = Cookies.get('isUserLogin');
+      if (!!isUserLogin) {
+        next({ path: '/' + isUserLogin });
+      } else {
+        alert('请输入用户标识');
+      }
+    },
+  },
+  {
     path: '/qmdld',
     name: 'qmdld',
     component: () => import('../views/qmdld/index.vue'),

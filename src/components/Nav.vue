@@ -5,6 +5,7 @@
 
       </div>
       <div class="nav-right">
+        <el-button @click="user">用户专区</el-button>
         <el-button @click="login">{{nickName}}</el-button>
         <el-button @click="logon">{{logonOut}}</el-button>
       </div>
@@ -26,6 +27,13 @@
         <el-button @click="logonShow = false">取消</el-button>
       </span>
     </el-dialog>
+    <el-dialog title="个人专区登入" :visible.sync="userShow" width="30%">
+      <el-input v-model="userid" placeholder="请输入唯一用户指令" clearable></el-input>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="userSubmit">确定</el-button>
+        <el-button @click="userShow = false">取消</el-button>
+      </span>
+    </el-dialog>
   </section>
 </template>
 
@@ -36,6 +44,8 @@ export default {
     return {
       loginShow: false,
       logonShow: false,
+      userShow: false,
+      userid: '',
       username: '',
       secondPassword: '',
       password: '',
@@ -43,6 +53,7 @@ export default {
       loginPassword: '',
       nickName: '登录',
       logonOut: '注册',
+      userList: ['lisa'],
     };
   },
   methods: {
@@ -84,6 +95,29 @@ export default {
         });
         this.nickName = '登录';
         this.logonOut = '注册';
+      }
+    },
+    user() {
+      const isUserLogin = Cookies.get('isUserLogin');
+      if (!isUserLogin || isUserLogin === 'false') {
+        this.userid = '';
+        this.userShow = true;
+      } else {
+        this.$router.push({path: '/user'});
+      }
+    },
+    userSubmit() {
+      for (const item of this.userList) {
+        if (this.userid === item) {
+          Cookies.set('isUserLogin', item, {expires: 3 / 24});
+          this.$router.push({to: '/user'});
+          this.userShow = false;
+        } else {
+          this.$message({
+            message: '目前没有此用户页，敬请期待',
+            type: 'error',
+          });
+        }
       }
     },
     loginSubmit() {
