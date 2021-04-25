@@ -285,6 +285,26 @@ const routes: RouteConfig[] = [
         path: '/jubao/view/20210426',
         component: () => import('../views/ju-bao/children/20210426.vue'),
       },
+      {
+        path: '/jubao/view/20210506',
+        component: () => import('../views/ju-bao/children/20210506.vue'),
+      },
+      {
+        path: '/jubao/view/20210510',
+        component: () => import('../views/ju-bao/children/20210510.vue'),
+      },
+      {
+        path: '/jubao/view/20210517',
+        component: () => import('../views/ju-bao/children/20210517.vue'),
+      },
+      {
+        path: '/jubao/view/20210524',
+        component: () => import('../views/ju-bao/children/20210524.vue'),
+      },
+      {
+        path: '/jubao/view/20210531',
+        component: () => import('../views/ju-bao/children/20210531.vue'),
+      },
     ],
   },
   // {
