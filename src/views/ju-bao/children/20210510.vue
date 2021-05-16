@@ -29,6 +29,12 @@ export default {
           times: '初犯',
         },
         {
+          area: '空间1区',
+          uid: '7786425',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0510/4.jpg?imagelim',
+          times: '初犯',
+        },
+        {
           area: '空间4区',
           uid: '4766590',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0510/1.jpg?imagelim',
