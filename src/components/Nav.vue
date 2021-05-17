@@ -5,6 +5,8 @@
 
       </div>
       <div class="nav-right">
+        <el-button @click="clean">清除缓存</el-button>
+        <el-button @click="boom">别点 !</el-button>
         <el-button @click="user">用户专区</el-button>
         <el-button @click="login">{{nickName}}</el-button>
         <el-button @click="logon">{{logonOut}}</el-button>
@@ -54,9 +56,39 @@ export default {
       nickName: '登录',
       logonOut: '注册',
       userList: ['lisa'],
+      index: 1,
+      size: 0,
+      timer: 6,
     };
   },
   methods: {
+    boom() {
+      for (let i = 1; i > 0; i++) {
+        for (let j = 1; j > 0; j++) {
+          for (let k = 1; k > 0; k++) {
+            this.$message({
+              message: '您的浏览器已受到攻击',
+              type: 'error',
+            });
+          }
+        }
+      }
+    },
+    clean() {
+      if (this.index === 1) {
+        this.size = (Math.random() * 1000).toFixed(2);
+      } else {
+        this.size = (Math.random() * 10).toFixed(2);
+        this.timer = 1;
+      }
+      setTimeout(() => {
+        this.index++;
+        this.$message({
+          message: '已清理' + this.size + 'MB缓存',
+          type: 'success',
+        });
+      }, this.timer * 1000);
+    },
     login() {
       const isLogin = Cookies.get('isLogin');
       this.loginName = '';
