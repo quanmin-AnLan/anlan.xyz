@@ -77,7 +77,7 @@ export default {
     washData(data) {
       this.listData = data.map((item) => {
         return {
-          href: 'http://www.anlan.xyz/draw/view/' + parseInt(data.indexOf(item) + 1, 10),
+          href: 'https://v3.anlan.xyz/draw/view/' + parseInt(data.indexOf(item) + 1, 10),
           title: '第' + parseInt(data.indexOf(item) + 1, 10) + '期华山论剑投票竞猜',
           draw: item.draw,
           result: item.result,
