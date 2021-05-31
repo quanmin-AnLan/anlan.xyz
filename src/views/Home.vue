@@ -31,9 +31,9 @@ export default {
       imgurls: [
         'http://img.anlan.xyz/aiding/yuanrenxue.jpg?imagelim',
       ],
-      anlanUrl: 'http://img.anlan.xyz/anlan.jpg?imagelim',
+      anlanUrl: 'http:\\img.anlan.xyz/anlan.jpg?imagelim',
       anlanUrls: [
-        'http://img.anlan.xyz/anlan.jpg?imagelim',
+        'http:\\img.anlan.xyz/anlan.jpg?imagelim',
       ],
     };
   },
