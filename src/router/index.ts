@@ -314,8 +314,8 @@ const routes: RouteConfig[] = [
         component: () => import('../views/ju-bao/children/20210607.vue'),
       },
       {
-        path: '/jubao/view/20210614',
-        component: () => import('../views/ju-bao/children/20210614.vue'),
+        path: '/jubao/view/20210615',
+        component: () => import('../views/ju-bao/children/20210615.vue'),
       },
       {
         path: '/jubao/view/20210621',
