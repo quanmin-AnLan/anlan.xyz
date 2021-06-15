@@ -276,11 +276,31 @@ export default {
         {
           href: '/jubao/view/20210621',
           title: '2021年6月21日不文明行为备案',
-          area: 'null',
+          area: '手q区',
         },
         {
           href: '/jubao/view/20210628',
           title: '2021年6月28日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210705',
+          title: '2021年7月5日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210712',
+          title: '2021年7月12日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210719',
+          title: '2021年7月19日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210726',
+          title: '2021年7月26日不文明行为备案',
           area: 'null',
         },
       ],
