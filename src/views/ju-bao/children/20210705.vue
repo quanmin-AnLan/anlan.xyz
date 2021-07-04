@@ -65,6 +65,12 @@ export default {
           times: '第2次',
         },
         {
+          area: '空间3区',
+          uid: '1994380',
+          img: 'http://img.anlan.xyz/ledou/jubao/2021/0705/12.jpg?imagelim',
+          times: '初犯',
+        },
+        {
           area: '空间4区',
           uid: '4410793',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0705/2.jpg?imagelim',
