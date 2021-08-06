@@ -51,7 +51,7 @@ export default {
           answer: 'windows+L',
         },
         {
-          question: '在使用快捷键打开我的电脑需要进行的设置',
+          question: '在使用快捷键打开我的电脑之前需要进行的设置',
           answer: 'https://jingyan.baidu.com/article/f3ad7d0f57f1bd09c3345bb9.html',
         },
         {
