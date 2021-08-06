@@ -140,6 +140,7 @@ export default {
       }
     },
     userSubmit() {
+      this.noUser = true;
       let len = this.userList.length;
       let itemNum = 0;
       for (const item of this.userList) {
