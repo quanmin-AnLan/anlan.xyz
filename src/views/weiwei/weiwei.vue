@@ -42,6 +42,22 @@ export default {
           question: '百度文库如何复制vip文章',
           answer: '选中要复制的内容，点击翻译，再点击弹出框右下角的百度翻译，在百度翻译界面复制即可',
         },
+        {
+          question: '如何搜索网页关键字',
+          answer: 'Ctrl+F，输入关键字，回车即可',
+        },
+        {
+          question: 'windows如何锁屏',
+          answer: 'windows+L',
+        },
+        {
+          question: '在使用快捷键打开我的电脑需要进行的设置',
+          answer: 'https://jingyan.baidu.com/article/f3ad7d0f57f1bd09c3345bb9.html',
+        },
+        {
+          question: '如何打开我的电脑',
+          answer: 'windows+E',
+        },
       ],
     };
   },
