@@ -16,12 +16,12 @@ const routes: RouteConfig[] = [
     component: () => import('../views/question.vue'),
   },
   {
-    path: '/lisa',
+    path: '/user/lisa',
     name: 'Lisa',
     component: () => import('../views/lisa/lisa.vue'),
   },
   {
-    path: '/weiwei',
+    path: '/user/weiwei',
     name: 'Weiwei',
     component: () => import('../views/weiwei/weiwei.vue'),
   },
