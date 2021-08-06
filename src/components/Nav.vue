@@ -59,6 +59,7 @@ export default {
       index: 1,
       size: 0,
       timer: 6,
+      noUser: true,
     };
   },
   methods: {
@@ -139,12 +140,17 @@ export default {
       }
     },
     userSubmit() {
+      let len = this.userList.length;
+      let itemNum = 0;
       for (const item of this.userList) {
         if (this.userid === item) {
           Cookies.set('isUserLogin', item, {expires: 3 / 24});
           this.$router.push({path: '/user'});
           this.userShow = false;
-        } else {
+          this.noUser = false;
+        }
+        itemNum = itemNum + 1
+        if (this.noUser === true && itemNum === len){
           this.$message({
             message: '目前没有此用户页，敬请期待',
             type: 'error',
