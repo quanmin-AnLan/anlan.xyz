@@ -32,7 +32,7 @@ const routes: RouteConfig[] = [
     beforeEnter(to, from, next) {
       const isUserLogin: string = Cookies.get('isUserLogin');
       if (!!isUserLogin) {
-        next({ path: '/' + isUserLogin });
+        next({ path: '/user/' + isUserLogin });
       } else {
         alert('请输入用户标识');
       }
