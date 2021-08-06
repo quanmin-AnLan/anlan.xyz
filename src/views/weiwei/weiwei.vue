@@ -36,7 +36,7 @@ export default {
         },
         {
           question: '小盒无线耳机蓝牙选哪个',
-          answer: '你猜',
+          answer: 'X-7',
         },
       ],
     };

@@ -16,14 +16,30 @@ const routes: RouteConfig[] = [
     component: () => import('../views/question.vue'),
   },
   {
-    path: '/user/lisa',
+    path: '/lisa',
     name: 'Lisa',
     component: () => import('../views/lisa/lisa.vue'),
+    beforeEnter(to, from, next) {
+      const isUserLogin: string = Cookies.get('isUserLogin');
+      if (!!isUserLogin) {
+        next();
+      } else {
+        alert('请输入用户标识');
+      }
+    },
   },
   {
-    path: '/user/weiwei',
+    path: '/weiwei',
     name: 'Weiwei',
     component: () => import('../views/weiwei/weiwei.vue'),
+    beforeEnter(to, from, next) {
+      const isUserLogin: string = Cookies.get('isUserLogin');
+      if (!!isUserLogin) {
+        next();
+      } else {
+        alert('请输入用户标识');
+      }
+    },
   },
   {
     path: '/user',
@@ -32,7 +48,7 @@ const routes: RouteConfig[] = [
     beforeEnter(to, from, next) {
       const isUserLogin: string = Cookies.get('isUserLogin');
       if (!!isUserLogin) {
-        next({ path: '/user/' + isUserLogin });
+        next({ path: '/' + isUserLogin });
       } else {
         alert('请输入用户标识');
       }
