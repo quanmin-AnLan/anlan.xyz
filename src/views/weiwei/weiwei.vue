@@ -21,42 +21,43 @@ export default {
           label: '问题',
         },
         {
-          prop: 'answer',
+          prop: 'url',
           label: '答案',
         },
       ],
       tableData: [
         {
           question: '挂脖耳机蓝牙选哪个',
-          answer: 'HONOR xSport PRO',
+          title: 'HONOR xSport PRO',
         },
         {
           question: '如果挂脖耳机蓝牙选了也没连接上怎么办',
-          answer: '把蓝牙耳机拆开插手机上连接',
+          title: '把蓝牙耳机拆开插手机上连接',
         },
         {
           question: '小盒无线耳机蓝牙选哪个',
-          answer: 'X-7',
+          title: 'X-7',
         },
         {
           question: '百度文库如何复制vip文章',
-          answer: '选中要复制的内容，点击翻译，再点击弹出框右下角的百度翻译，在百度翻译界面复制即可',
+          title: '选中要复制的内容，点击翻译，再点击弹出框右下角的百度翻译，在百度翻译界面复制即可',
         },
         {
           question: '如何搜索网页关键字',
-          answer: 'Ctrl+F，输入关键字，回车即可',
+          title: 'Ctrl+F，输入关键字，回车即可',
         },
         {
           question: 'windows如何锁屏',
-          answer: 'windows+L',
+          title: 'windows+L',
         },
         {
           question: '在使用快捷键打开我的电脑之前需要进行的设置',
-          answer: 'https://jingyan.baidu.com/article/f3ad7d0f57f1bd09c3345bb9.html',
+          title: '点击进入回答',
+          href: 'https://jingyan.baidu.com/article/f3ad7d0f57f1bd09c3345bb9.html',
         },
         {
           question: '如何打开我的电脑',
-          answer: 'windows+E',
+          title: 'windows+E',
         },
       ],
     };

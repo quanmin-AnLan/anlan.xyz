@@ -48,7 +48,7 @@ export default {
         },
         {
           area: '微信H5区',
-          uid: '250932', 
+          uid: '250932',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/0712/4.jpg?imagelim',
           times: '初犯',
         },

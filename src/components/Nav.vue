@@ -55,7 +55,7 @@ export default {
       loginPassword: '',
       nickName: '登录',
       logonOut: '注册',
-      userList: ['lisa','weiwei'],
+      userList: ['lisa', 'weiwei'],
       index: 1,
       size: 0,
       timer: 6,
@@ -141,7 +141,7 @@ export default {
     },
     userSubmit() {
       this.noUser = true;
-      let len = this.userList.length;
+      const len = this.userList.length;
       let itemNum = 0;
       for (const item of this.userList) {
         if (this.userid === item) {
@@ -150,8 +150,8 @@ export default {
           this.userShow = false;
           this.noUser = false;
         }
-        itemNum = itemNum + 1
-        if (this.noUser === true && itemNum === len){
+        itemNum = itemNum + 1;
+        if (this.noUser === true && itemNum === len) {
           this.$message({
             message: '目前没有此用户页，敬请期待',
             type: 'error',
