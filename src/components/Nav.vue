@@ -55,7 +55,7 @@ export default {
       loginPassword: '',
       nickName: '登录',
       logonOut: '注册',
-      userList: ['lisa'],
+      userList: ['lisa','weiwei'],
       index: 1,
       size: 0,
       timer: 6,

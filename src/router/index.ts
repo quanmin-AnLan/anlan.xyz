@@ -21,6 +21,11 @@ const routes: RouteConfig[] = [
     component: () => import('../views/lisa/lisa.vue'),
   },
   {
+    path: '/weiwei',
+    name: 'Weiwei',
+    component: () => import('../views/weiwei/weiwei.vue'),
+  },
+  {
     path: '/user',
     name: 'User',
     component: () => import('../views/userConfig.vue'),
