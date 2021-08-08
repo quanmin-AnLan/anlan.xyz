@@ -311,7 +311,7 @@ export default {
         {
           href: '/jubao/view/20210809',
           title: '2021年8月9日不文明行为备案',
-          area: 'null',
+          area: '空间4区，手q区，微信小程序1、10区',
         },
         {
           href: '/jubao/view/20210816',
