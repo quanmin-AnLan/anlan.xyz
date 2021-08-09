@@ -29,6 +29,11 @@ const routes: RouteConfig[] = [
     },
   },
   {
+    path: '/lisa/money',
+    name: 'LisaMoney',
+    component: () => import('../views/lisa/children/money.vue'),
+  },
+  {
     path: '/weiwei',
     name: 'Weiwei',
     component: () => import('../views/weiwei/weiwei.vue'),
