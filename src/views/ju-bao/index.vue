@@ -326,6 +326,26 @@ export default {
         {
           href: '/jubao/view/20210830',
           title: '2021年8月30日不文明行为备案',
+          area: '手q区，空间4区，微信小程序1、2区',
+        },
+        {
+          href: '/jubao/view/20210830',
+          title: '2021年9月6日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210830',
+          title: '2021年9月13日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210830',
+          title: '2021年9月22日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20210830',
+          title: '2021年9月27日不文明行为备案',
           area: 'null',
         },
       ],
