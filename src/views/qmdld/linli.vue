@@ -147,6 +147,7 @@ header {
     height: 100px;
     line-height: 100px;
     width: 240px;
+    background: rgba(255, 255, 255, 0.5);
     a {
       display: block;
       width: 100%;

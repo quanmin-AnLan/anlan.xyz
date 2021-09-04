@@ -43,8 +43,12 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
+p {
+  color: #abcdef;
+}
 h3 {
   margin: 40px 0 0;
+  color: yellowgreen;
 }
 ul {
   list-style-type: none;
@@ -55,6 +59,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: blue;
 }
 </style>
