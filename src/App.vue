@@ -31,7 +31,6 @@ export default {
   justify-content: center;
   box-sizing: border-box;
   padding-top: 50px;
-  background: url('//img.anlan.xyz/anlan/bg.jpg');
 }
 body {
   margin: 0 !important;
