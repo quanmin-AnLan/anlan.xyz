@@ -66,6 +66,7 @@ export default {
   .title {
     width: 150px;
     text-align: right;
+    color: yellow;
   }
 }
 .content {
@@ -75,7 +76,7 @@ export default {
   .title {
     width: 150px;
     text-align: right;
-    background: rgba(255, 255, 255, 0.5);
+    color: blue;
   }
   .content-box {
     max-width: 450px;
