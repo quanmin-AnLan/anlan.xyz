@@ -3,14 +3,14 @@
     <el-image class="logo" :src="anlanUrl" :preview-src-list="anlanUrls" fit="fill"></el-image>
     <HelloWorld msg=" "/>
     <el-button @click="route('qmdld')">全民大乐斗专区</el-button>
-    <el-button @click="route('aiding')">爱锭网（安澜重构）</el-button>
-    <el-tooltip placement="top">
+    <!-- <el-button @click="route('aiding')">爱锭网（安澜重构）</el-button> -->
+    <!-- <el-tooltip placement="top">
       <div slot="content">
         <p>扫描右侧二维码加好友</p>
         <p>填写观棋不宇推荐即可</p>
-      </div>
+      </div> -->
       <el-button @click="aiding">爱锭网（跳转）</el-button>
-    </el-tooltip>
+    <!-- </el-tooltip> -->
     <!-- <section class="ad">
       <el-image style="width: 100%;" :src="imgurl" :preview-src-list="imgurls" fit="fill"></el-image>
     </section> -->
