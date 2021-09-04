@@ -55,7 +55,8 @@ export default {
 </script>
 <style lang="less" scoped>
 .main-container {
-  width: 600px
+  width: 600px;
+  background: rgba(255, 255, 255, 0.4)
 }
 .head {
   width: 100%;
@@ -66,7 +67,7 @@ export default {
   .title {
     width: 150px;
     text-align: right;
-    color: yellow;
+    color: blue
   }
 }
 .content {
@@ -76,15 +77,15 @@ export default {
   .title {
     width: 150px;
     text-align: right;
-    color: blue;
+    color: blue
   }
   .content-box {
     max-width: 450px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
   }
 }
 .el-input {
-  width: 80px;
+  width: 80px
 }
 </style>

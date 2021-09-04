@@ -47,6 +47,10 @@
     height: 100px;
     line-height: 100px;
     width: 240px;
+    background: rgba(255, 255, 255, 0.3);
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
     a {
       display: block;
       width: 100%;
