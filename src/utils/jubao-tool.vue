@@ -63,6 +63,7 @@ export default {
     height: 80px;
     line-height: 80px;
     font-size: 30px;
+    color: #fff;
   }
 }
 </style>
