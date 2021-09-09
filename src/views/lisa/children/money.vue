@@ -28,6 +28,11 @@
             title: '7月工资',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/7.jpg?imagelim',
           },
+          {
+            id: 3,
+            title: '8月工资',
+            href: 'http://img.anlan.xyz/lsdw/drf/gongzi/8.jpg?imagelim',
+          },
         ],
       };
     },
