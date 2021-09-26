@@ -47,6 +47,19 @@ const routes: RouteConfig[] = [
     },
   },
   {
+    path: '/code',
+    name: 'Code',
+    component: () => import('../views/code/index.vue'),
+    beforeEnter(to, from, next) {
+      const isUserLogin: string = Cookies.get('isUserLogin');
+      if (!!isUserLogin) {
+        next();
+      } else {
+        alert('请输入用户标识');
+      }
+    },
+  },
+  {
     path: '/user',
     name: 'User',
     component: () => import('../views/userConfig.vue'),
