@@ -346,6 +346,66 @@ export default {
         {
           href: '/jubao/view/20210927',
           title: '2021年9月27日不文明行为备案',
+          area: '空间1区，微信小程序1区',
+        },
+        {
+          href: '/jubao/view/20211011',
+          title: '2021年10月11日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211018',
+          title: '2021年10月18日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211025',
+          title: '2021年10月25日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211101',
+          title: '2021年11月1日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211108',
+          title: '2021年11月8日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211115',
+          title: '2021年11月15日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211122',
+          title: '2021年11月22日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211129',
+          title: '2021年11月29日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211206',
+          title: '2021年12月6日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211213',
+          title: '2021年12月13日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211220',
+          title: '2021年12月20日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20211227',
+          title: '2021年12月27日不文明行为备案',
           area: 'null',
         },
       ],

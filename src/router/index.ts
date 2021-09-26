@@ -416,6 +416,54 @@ const routes: RouteConfig[] = [
         path: '/jubao/view/20210927',
         component: () => import('../views/ju-bao/children/20210927.vue'),
       },
+      {
+        path: '/jubao/view/20211011',
+        component: () => import('../views/ju-bao/children/20211011.vue'),
+      },
+      {
+        path: '/jubao/view/20211018',
+        component: () => import('../views/ju-bao/children/20211018.vue'),
+      },
+      {
+        path: '/jubao/view/20211025',
+        component: () => import('../views/ju-bao/children/20211025.vue'),
+      },
+      {
+        path: '/jubao/view/20211101',
+        component: () => import('../views/ju-bao/children/20211101.vue'),
+      },
+      {
+        path: '/jubao/view/20211108',
+        component: () => import('../views/ju-bao/children/20211108.vue'),
+      },
+      {
+        path: '/jubao/view/20211115',
+        component: () => import('../views/ju-bao/children/20211115.vue'),
+      },
+      {
+        path: '/jubao/view/20211122',
+        component: () => import('../views/ju-bao/children/20211122.vue'),
+      },
+      {
+        path: '/jubao/view/20211129',
+        component: () => import('../views/ju-bao/children/20211129.vue'),
+      },
+      {
+        path: '/jubao/view/20211206',
+        component: () => import('../views/ju-bao/children/20211206.vue'),
+      },
+      {
+        path: '/jubao/view/20211213',
+        component: () => import('../views/ju-bao/children/20211213.vue'),
+      },
+      {
+        path: '/jubao/view/20211220',
+        component: () => import('../views/ju-bao/children/20211220.vue'),
+      },
+      {
+        path: '/jubao/view/20211227',
+        component: () => import('../views/ju-bao/children/20211227.vue'),
+      },
     ],
   },
   // {
