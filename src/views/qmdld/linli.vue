@@ -1,6 +1,6 @@
 <template>
   <section class="main-page">
-    <header>琳璃出品 必属精品</header>
+    <header class="linli-title">琳璃出品 必属精品</header>
     <div class="linli-box">
       <div class="linli-item" v-for="item in linliData" :key="item.id">
         <a :href="item.href" target="_blank">{{item.title}}</a>
@@ -132,10 +132,11 @@
 .main-page {
   width: 100%;
 }
-header {
+.linli-title {
   height: 80px;
   line-height: 80px;
   font-size: 30px;
+  color: yellowgreen;
 }
 .linli-box {
   margin-top: 50px;
