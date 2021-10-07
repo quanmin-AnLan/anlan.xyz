@@ -58,7 +58,7 @@
           },
           {
             id: 7,
-            title: '修炼管',
+            title: '修炼馆',
             href: 'http://img.anlan.xyz/ledou/linli/xiu.png?imageslim',
           },
           {
