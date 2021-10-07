@@ -349,6 +349,11 @@ export default {
           area: '空间1区，微信小程序1区',
         },
         {
+          href: '/jubao/view/20211008',
+          title: '2021年10月8日不文明行为备案',
+          area: 'qq小程序区，空间4、5区，微信小程序2、6、11、12区',
+        },
+        {
           href: '/jubao/view/20211011',
           title: '2021年10月11日不文明行为备案',
           area: 'null',
