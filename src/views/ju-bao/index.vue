@@ -356,12 +356,12 @@ export default {
         {
           href: '/jubao/view/20211011',
           title: '2021年10月11日不文明行为备案',
-          area: 'null',
+          area: '微信H5区',
         },
         {
           href: '/jubao/view/20211018',
           title: '2021年10月18日不文明行为备案',
-          area: 'null',
+          area: '微信小程序1、2区',
         },
         {
           href: '/jubao/view/20211025',
