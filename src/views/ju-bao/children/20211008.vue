@@ -36,9 +36,9 @@ export default {
         },
         {
           area: '微信小程序12区',
-          uid: '62914140',
+          uid: '94958153',
           img: 'http://img.anlan.xyz/ledou/jubao/2021/1008/2.jpg?imagelim',
-          times: '第2次',
+          times: '初犯',
         },
         {
           area: 'qq小程序区',
