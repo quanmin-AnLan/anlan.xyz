@@ -56,8 +56,8 @@ export default {
           number: '2',
         },
         {
-          href: 'http://txt.anlan.xyz/ledou/update/2021/1104.txt',
-          title: '【全民大乐斗】11月4日更新公告',
+          href: 'http://txt.anlan.xyz/ledou/update/2021/1111.txt',
+          title: '【全民大乐斗】11月11日更新公告',
           number: '3',
         },
       ],
