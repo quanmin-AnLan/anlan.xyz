@@ -3,6 +3,7 @@
     <section class="container">
       <section class="left-container">
         <al-table :tableData="update" :headerSet="updateSet"></al-table>
+        <el-button class="anlan" @click="$router.push('/anlan')">安澜专栏</el-button>
       </section>
       <section class="right-container">
         <el-button @click="$router.push('/jubao')">稽查中心</el-button>
@@ -120,4 +121,7 @@ export default {
 
 <style lang="less" scoped>
 @import '../../less/qmdld/index.less';
+.anlan {
+  margin-top: 30px;
+}
 </style>

@@ -14,7 +14,7 @@ export default {
   methods: {
     getPassword() {
       this.$message({
-        message: 'Anlan0222.',
+        message: 'menhera0822.',
         type: 'success',
       });
     },

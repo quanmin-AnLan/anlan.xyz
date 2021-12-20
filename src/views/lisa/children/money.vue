@@ -38,6 +38,11 @@
             title: '10月工资',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/10.jpg?imagelim',
           },
+          {
+            id: 6,
+            title: '11月工资',
+            href: 'http://img.anlan.xyz/lsdw/drf/gongzi/11.jpg?imagelim',
+          },
         ],
       };
     },

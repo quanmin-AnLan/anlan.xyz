@@ -34,6 +34,11 @@ const routes: RouteConfig[] = [
     component: () => import('../views/lisa/children/money.vue'),
   },
   {
+    path: '/anlan',
+    name: 'Anlan',
+    component: () => import('../views/anlan/index.vue'),
+  },
+  {
     path: '/weiwei',
     name: 'Weiwei',
     component: () => import('../views/weiwei/weiwei.vue'),
