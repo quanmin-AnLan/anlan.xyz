@@ -12,7 +12,7 @@ export default {
 
 <style lang="less" scoped>
 .anlan-container {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     color: #fff;
     display: flex;
     align-items: center;

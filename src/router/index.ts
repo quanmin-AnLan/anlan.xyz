@@ -37,6 +37,9 @@ const routes: RouteConfig[] = [
     path: '/anlan',
     name: 'Anlan',
     component: () => import('../views/anlan/index.vue'),
+    meta: {
+      title: '安澜网 - 安澜专栏',
+    },
   },
   {
     path: '/weiwei',
