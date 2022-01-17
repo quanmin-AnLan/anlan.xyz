@@ -421,12 +421,12 @@ export default {
         {
           href: '/jubao/view/20220110',
           title: '2022年1月10日不文明行为备案',
-          area: 'null',
+          area: '空间5区',
         },
         {
           href: '/jubao/view/20220117',
           title: '2022年1月17日不文明行为备案',
-          area: 'null',
+          area: '空间2、5区，微信小程序1、2、10、12区',
         },
         {
           href: '/jubao/view/20220124',

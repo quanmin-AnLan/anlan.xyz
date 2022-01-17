@@ -43,6 +43,11 @@
             title: '11月工资',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/11.jpg?imagelim',
           },
+          {
+            id: 7,
+            title: '12月工资',
+            href: 'http://img.anlan.xyz/lsdw/drf/gongzi/12.jpg?imagelim',
+          },
         ],
       };
     },
