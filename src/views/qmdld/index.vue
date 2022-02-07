@@ -47,18 +47,18 @@ export default {
       ],
       update: [
         {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/120.txt',
-          title: '【全民大乐斗】1月20日更新公告',
+          href: 'http://txt.anlan.xyz/ledou/update/2022/210.txt',
+          title: '【全民大乐斗】2月10日更新公告',
           number: '1',
         },
         {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/113.txt',
-          title: '【全民大乐斗】1月13日更新公告',
+          href: 'http://txt.anlan.xyz/ledou/update/2022/203.txt',
+          title: '【全民大乐斗】2月3日更新公告',
           number: '2',
         },
         {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/106.txt',
-          title: '【全民大乐斗】1月6日更新公告',
+          href: 'http://txt.anlan.xyz/ledou/update/2022/127.txt',
+          title: '【全民大乐斗】1月27日更新公告',
           number: '3',
         },
       ],
