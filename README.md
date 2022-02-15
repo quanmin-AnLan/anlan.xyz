@@ -1,4 +1,4 @@
-# 安澜网<http://v3.anlan.xyz>
+# [安澜网](http://v3.anlan.xyz)
 
 ## project need
 
