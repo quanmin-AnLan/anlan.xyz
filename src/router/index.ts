@@ -84,7 +84,7 @@ const routes: RouteConfig[] = [
     path: '/qmdld',
     name: 'qmdld',
     component: () => import('../views/qmdld/index.vue'),
-    beforeEnter(to, from , next) {
+    beforeEnter(to, from, next) {
       const isLogin: string = Cookies.get('isLogin');
       if (isLogin && isLogin === 'true') {
         next();
@@ -507,6 +507,38 @@ const routes: RouteConfig[] = [
       {
         path: '/jubao/view/20220228',
         component: () => import('../views/ju-bao/children/20220228.vue'),
+      },
+      {
+        path: '/jubao/view/20220307',
+        component: () => import('../views/ju-bao/children/20220307.vue'),
+      },
+      {
+        path: '/jubao/view/20220314',
+        component: () => import('../views/ju-bao/children/20220314.vue'),
+      },
+      {
+        path: '/jubao/view/20220321',
+        component: () => import('../views/ju-bao/children/20220321.vue'),
+      },
+      {
+        path: '/jubao/view/20220328',
+        component: () => import('../views/ju-bao/children/20220328.vue'),
+      },
+      {
+        path: '/jubao/view/20220406',
+        component: () => import('../views/ju-bao/children/20220406.vue'),
+      },
+      {
+        path: '/jubao/view/20220411',
+        component: () => import('../views/ju-bao/children/20220411.vue'),
+      },
+      {
+        path: '/jubao/view/20220418',
+        component: () => import('../views/ju-bao/children/20220418.vue'),
+      },
+      {
+        path: '/jubao/view/20220425',
+        component: () => import('../views/ju-bao/children/20220425.vue'),
       },
     ],
   },

@@ -1,7 +1,7 @@
 <template>
   <section class="main-page">
     <div class="lisa-box">
-      <div class="lisa-item" v-for="item in lisaData" :key="item.id">
+      <div class="lisa-item" v-for="item in lisaData" :key="item.href">
         <a :href="item.href" target="_blank">{{item.title}}</a>
       </div>
     </div>
@@ -19,34 +19,32 @@
       return {
         lisaData: [
           {
-            id: 1,
-            title: '6月工资',
+            title: '2021.6',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/6.jpg?imagelim',
           },
           {
-            id: 2,
-            title: '7月工资',
+            title: '2021.7',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/7.jpg?imagelim',
           },
           {
-            id: 3,
-            title: '8月工资',
+            title: '2021.8',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/8.jpg?imagelim',
           },
           {
-            id: 5,
-            title: '10月工资',
+            title: '2021.10',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/10.jpg?imagelim',
           },
           {
-            id: 6,
-            title: '11月工资',
+            title: '2021.11',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/11.jpg?imagelim',
           },
           {
-            id: 7,
-            title: '12月工资',
+            title: '2021.12',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/12.jpg?imagelim',
+          },
+          {
+            title: '2022.1',
+            href: 'http://img.anlan.xyz/lsdw/drf/gongzi/2022-1.jpg?imagelim',
           },
         ],
       };
