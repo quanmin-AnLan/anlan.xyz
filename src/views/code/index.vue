@@ -14,8 +14,8 @@ export default {
   methods: {
     getPassword() {
       this.$message({
-        message: 'menhera0822.',
-        type: 'success',
+        message: '淘宝代打中，勿扰',
+        type: 'warning',
       });
     },
   },
