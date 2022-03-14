@@ -1,10 +1,10 @@
 <template>
     <section>
         <div class="head">
-            <div class="title">输入一共有几条：</div>
+            <div class="title">一次随机几次：</div>
             <el-input v-model="count"></el-input>
         </div>
-        <el-button class="into" @click="getUser()">暗黑3随机</el-button>
+        <el-button class="into" @click="getUser()">点击开始随机</el-button>
         <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
         <Home></Home>
     </section>
