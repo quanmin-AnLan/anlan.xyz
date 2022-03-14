@@ -86,7 +86,20 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.head {
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+}
 .title {
     color: #fff;
+    line-height: 40px;
+}
+.into {
+    margin-bottom: 20px;
+}
+/deep/ .is-leaf {
+    background: #506fbc !important;
+    color: #fff !important;
 }
 </style>
