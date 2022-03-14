@@ -86,6 +86,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.main {
+    width: 100%;
+}
 .head {
     width: 400px;
     margin: 20px auto;
