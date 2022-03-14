@@ -62,11 +62,12 @@ export default {
     },
     components: {
         Home,
+        AlTable,
     },
     methods: {
         updateTableData() {
-            const a = Math.floor(Math.random * 7);
-            const b = Math.floor(Math.random * 6);
+            const a = Math.floor(Math.random() * 7);
+            const b = Math.floor(Math.random() * 6);
             const firstName = this.data[a].name;
             const arr = this.data[a].value;
             const secondName = arr[b];
