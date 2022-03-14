@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="main">
         <div class="head">
             <div class="title">一次随机几次：</div>
             <el-input v-model="count"></el-input>
@@ -86,5 +86,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    
+.title {
+    color: #fff;
+}
 </style>

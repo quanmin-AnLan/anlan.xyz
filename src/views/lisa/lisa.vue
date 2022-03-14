@@ -34,7 +34,7 @@ export default {
   right: 30px;
   padding: 0;
 }
-.into {
+.into-two {
   width: 140px;
   height: 40px;
   line-height: 40px;
