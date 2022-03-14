@@ -2,7 +2,8 @@
   <section class="main">
     <diablo></diablo>
     <Home></Home>
-    <el-button class="into" @click="into">查看工资</el-button>
+    <el-button class="into" @click="into('/lisa/money')">查看工资</el-button>
+    <el-button class="into" @click="into('/lisa/randomD3')">暗黑3随机</el-button>
   </section>
 </template>
 
@@ -15,8 +16,8 @@ export default {
     Home,
   },
   methods: {
-    into() {
-        this.$router.push({path: '/lisa/money'});
+    into(url) {
+        this.$router.push({path: url});
     },
   },
 };

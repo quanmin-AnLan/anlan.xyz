@@ -34,6 +34,11 @@ const routes: RouteConfig[] = [
     component: () => import('../views/lisa/children/money.vue'),
   },
   {
+    path: '/lisa/randomD3',
+    name: 'LisaRandomD3',
+    component: () => import('../views/lisa/children/randomD3.vue'),
+  },
+  {
     path: '/anlan',
     name: 'Anlan',
     component: () => import('../views/anlan/index.vue'),
@@ -599,7 +604,7 @@ const router = new VueRouter({
 
 export default router;
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to: any, from, next) => {
   window.document.title = to.meta.title || '安澜网';
   if (to.path.indexOf('/jubao/view/') !== -1) {
     window.document.title = '安澜查杀 - ' + window.location.pathname.slice(-8);
