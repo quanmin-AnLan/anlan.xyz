@@ -2,7 +2,7 @@
     <section class="main">
         <div class="head">
             <div class="title">一次随机几次：</div>
-            <el-input v-model="count"></el-input>
+            <el-input style="width: 200px;" v-model="count"></el-input>
         </div>
         <el-button class="into" @click="getUser()">点击开始随机</el-button>
         <al-table :headerSet="headerSet" :tableData="tableData"></al-table>
