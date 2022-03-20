@@ -46,6 +46,10 @@
             title: '2022.1',
             href: 'http://img.anlan.xyz/lsdw/drf/gongzi/2022-1.jpg?imagelim',
           },
+          {
+            title: '2022.2',
+            href: 'http://img.anlan.xyz/lsdw/drf/gongzi/2022-2.jpg?imagelim',
+          },
         ],
       };
     },
