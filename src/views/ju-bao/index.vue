@@ -461,12 +461,12 @@ export default {
         {
           href: '/jubao/view/20220314',
           title: '2022年3月14日不文明行为备案',
-          area: 'null',
+          area: '空间3区，微信小程序13区',
         },
         {
           href: '/jubao/view/20220321',
           title: '2022年3月21日不文明行为备案',
-          area: 'null',
+          area: '微信小程序13区',
         },
         {
           href: '/jubao/view/20220328',
