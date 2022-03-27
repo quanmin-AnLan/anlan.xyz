@@ -471,7 +471,7 @@ export default {
         {
           href: '/jubao/view/20220328',
           title: '2022年3月28日不文明行为备案',
-          area: 'null',
+          area: '空间3区，微信小程序2区',
         },
         {
           href: '/jubao/view/20220406',
