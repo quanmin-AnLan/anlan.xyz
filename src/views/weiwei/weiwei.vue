@@ -59,6 +59,10 @@ export default {
           question: '如何打开我的电脑',
           title: 'windows+E',
         },
+        {
+          question: '全国教师管理登录系统',
+          title: 'cy197358!!',
+        },
       ],
     };
   },
