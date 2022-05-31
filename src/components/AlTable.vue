@@ -30,7 +30,7 @@
             <slot name="special-content" :scope="scope"></slot>
           </div>
           <div v-else-if="item.prop === 'sort'">
-            <img :src="scope.row.sort" style="width:30px;" />
+            <img :src="scope.row.sort" style="width:30px;" alt="排名"/>
           </div>
           <div v-else-if="item.prop === 'img'">
             <el-image
@@ -38,6 +38,7 @@
               :src="scope.row.img"
               :preview-src-list="[scope.row.img]"
               fit="fill"
+              alt="图片"
             ></el-image>
           </div>
           <div

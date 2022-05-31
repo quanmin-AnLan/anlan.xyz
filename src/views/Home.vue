@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <el-image class="logo" :src="anlanUrl" :preview-src-list="anlanUrls" fit="fill"></el-image>
+    <el-image class="logo" :src="anlanUrl" :preview-src-list="anlanUrls" fit="fill" alt="安澜logo"></el-image>
     <HelloWorld msg=" "/>
     <el-button @click="route('qmdld')">全民大乐斗专区</el-button>
     <!-- <el-button @click="route('aiding')">爱锭网（安澜重构）</el-button> -->
@@ -12,7 +12,7 @@
       <el-button @click="aiding">爱锭网（跳转）</el-button>
     <!-- </el-tooltip> -->
     <!-- <section class="ad">
-      <el-image style="width: 100%;" :src="imgurl" :preview-src-list="imgurls" fit="fill"></el-image>
+      <el-image style="width: 100%;" :src="imgurl" :preview-src-list="imgurls" fit="fill" alt="广告"></el-image>
     </section> -->
   </div>
 </template>
