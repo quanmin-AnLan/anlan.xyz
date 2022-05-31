@@ -39,6 +39,7 @@
               :preview-src-list="[scope.row.img]"
               fit="fill"
               alt="图片"
+              lazy
             ></el-image>
           </div>
           <div
