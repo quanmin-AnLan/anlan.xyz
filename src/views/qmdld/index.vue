@@ -2,7 +2,7 @@
   <section class="main">
     <section class="container">
       <section class="left-container">
-        <al-table :tableData="update" :headerSet="updateSet"></al-table>
+        <!-- <al-table :tableData="update" :headerSet="updateSet"></al-table> -->
         <el-button class="anlan" @click="$router.push('/anlan')">安澜专栏</el-button>
       </section>
       <section class="right-container">
@@ -13,74 +13,74 @@
       </section>
     </section>
     <Home></Home>
-    <el-dialog title="说明" :visible.sync="show" width="30%">
+    <!-- <el-dialog title="说明" :visible.sync="show" width="30%">
       <div style="font-size: 18px;">由于安澜比较懒，所以只展示最近3次更新公告</div>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="setLocalStorage">关闭且不再提示</el-button>
         <el-button type="primary" @click="dialogClose">关闭</el-button>
       </span>
-    </el-dialog>
+    </el-dialog> -->
   </section>
 </template>
 
 <script>
 import Home from '../../components/GoHome.vue';
-import AlTable from '@/components/AlTable.vue';
+// import AlTable from '@/components/AlTable.vue';
 export default {
   components: {
     Home,
-    AlTable,
+    // AlTable,
   },
   data() {
     return {
-      show: false,
-      updateSet: [
-        {
-          prop: 'number',
-          label: '最新',
-          width: '50px',
-        },
-        {
-          prop: 'url',
-          label: '更新公告',
-        },
-      ],
-      update: [
-        {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/407.txt',
-          title: '【全民大乐斗】4月7日更新公告',
-          number: '1',
-        },
-        {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/331.txt',
-          title: '【全民大乐斗】3月31日更新公告',
-          number: '2',
-        },
-        {
-          href: 'http://txt.anlan.xyz/ledou/update/2022/324.txt',
-          title: '【全民大乐斗】3月24日更新公告',
-          number: '3',
-        },
-      ],
-      arr: [],
+      // show: false,
+      // updateSet: [
+      //   {
+      //     prop: 'number',
+      //     label: '最新',
+      //     width: '50px',
+      //   },
+      //   {
+      //     prop: 'url',
+      //     label: '更新公告',
+      //   },
+      // ],
+      // update: [
+      //   {
+      //     href: 'http://txt.anlan.xyz/ledou/update/2022/407.txt',
+      //     title: '【全民大乐斗】4月7日更新公告',
+      //     number: '1',
+      //   },
+      //   {
+      //     href: 'http://txt.anlan.xyz/ledou/update/2022/331.txt',
+      //     title: '【全民大乐斗】3月31日更新公告',
+      //     number: '2',
+      //   },
+      //   {
+      //     href: 'http://txt.anlan.xyz/ledou/update/2022/324.txt',
+      //     title: '【全民大乐斗】3月24日更新公告',
+      //     number: '3',
+      //   },
+      // ],
+      // arr: [],
     };
   },
   methods: {
-    dialogClose() {
-      this.show = false;
-    },
-    setLocalStorage() {
-      this.dialogClose();
-      window.localStorage.setItem('show', 'true');
-    },
-    checkLocalStorage() {
-      const isClose = window.localStorage.getItem('show');
-      if (isClose) {
-        this.show = false;
-      } else {
-        this.show = true;
-      }
-    },
+    // dialogClose() {
+    //   this.show = false;
+    // },
+    // setLocalStorage() {
+    //   this.dialogClose();
+    //   window.localStorage.setItem('show', 'true');
+    // },
+    // checkLocalStorage() {
+    //   const isClose = window.localStorage.getItem('show');
+    //   if (isClose) {
+    //     this.show = false;
+    //   } else {
+    //     this.show = true;
+    //   }
+    // },
     // random(arr, num) {
     //   const len = arr.length;
     //   for (let i = len - 1; i >= 0; i--) {
@@ -113,7 +113,7 @@ export default {
     // },
   },
   mounted() {
-    this.checkLocalStorage();
+    // this.checkLocalStorage();
     // this.arrPush(this.arr);
   },
 };
