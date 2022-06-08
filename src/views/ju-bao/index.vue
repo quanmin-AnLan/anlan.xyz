@@ -516,7 +516,7 @@ export default {
         {
           href: '/jubao/view/20220608',
           title: '2022年6月8日不文明行为备案',
-          area: 'null',
+          area: '空间1、5区',
         },
         {
           href: '/jubao/view/20220613',
