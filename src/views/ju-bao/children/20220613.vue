@@ -17,10 +17,10 @@ export default {
             day: '13',
             tableData: [
                 {
-                    area: '你猜',
-                    uid: '你猜',
-                    img: 'http://img.anlan.xyz/null.jpg',
-                    times: '初犯',
+                    area: '空间5区',
+                    uid: '75830117',
+                    img: 'http://img.anlan.xyz/ledou/jubao/2022/0608/7.jpg?imagelim',
+                    times: '第2次',
                 },
             ],
         };
