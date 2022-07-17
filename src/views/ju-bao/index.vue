@@ -536,7 +536,7 @@ export default {
         {
           href: '/jubao/view/20220704',
           title: '2022年7月4日不文明行为备案',
-          area: 'null',
+          area: '微信小程序2区',
         },
         {
           href: '/jubao/view/20220711',
@@ -546,7 +546,7 @@ export default {
         {
           href: '/jubao/view/20220718',
           title: '2022年7月18日不文明行为备案',
-          area: 'null',
+          area: '手q区，微信小程序6区',
         },
         {
           href: '/jubao/view/20220725',
