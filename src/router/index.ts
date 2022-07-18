@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Cookies from 'js-cookie';
+import {
+  reportPV
+} from "@/api/api";
 
 Vue.use(VueRouter);
 
@@ -638,6 +641,36 @@ export default router;
 
 router.beforeEach((to: any, from, next) => {
   window.document.title = to.meta.title || '安澜网';
+  let spmC = ''
+  if (to.path === '/') {
+    spmC = 'home'
+  } else {
+    const baseSpmC = to.path.split('/')
+    if (baseSpmC[0] === '') {
+      baseSpmC.shift()
+    }
+    const end = baseSpmC[baseSpmC.length - 1]
+    var n = Number(end);
+    if (!isNaN(n) && n !== 404) {
+      baseSpmC.pop()
+    }
+    spmC = baseSpmC.join('-')
+  }
+  const year = new Date().getFullYear();
+  let month: any = new Date().getMonth() + 1;
+  let day: any = new Date().getDate();
+
+  if (month < 10) {
+    month = "0" + month;
+  }
+  if (day < 10) {
+    day = "0" + day;
+  }
+  const params = {
+    setDate: `${year}/${month}/${day}`,
+    spm: `smpc.anlan-home.${spmC}`
+  }
+  reportPV(params)
   if (to.path.indexOf('/jubao/view/') !== -1) {
     window.document.title = '安澜查杀 - ' + window.location.pathname.slice(-8);
   }

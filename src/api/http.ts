@@ -63,3 +63,22 @@ export const yyxPost = (url: string, params: object = {}) => {
     });
   });
 };
+
+const anlan = axios.create({
+  baseURL: "http://82.157.95.66:3000/",
+});
+
+export const anlanGet = (url: string, params: object) => {
+  return new Promise((resolve, reject) => {
+    anlan
+      .get(url, {
+        params,
+      })
+      .then((res) => {
+        resolve(res.data);
+      })
+      .catch((err) => {
+        reject(err.data);
+      });
+  })
+}
