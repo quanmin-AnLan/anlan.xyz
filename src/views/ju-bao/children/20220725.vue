@@ -13,14 +13,14 @@ export default {
     data() {
         return {
             year: '2022',
-            month: '6',
-            day: '13',
+            month: '7',
+            day: '25',
             tableData: [
                 {
-                    area: '空间5区',
-                    uid: '75830117',
-                    img: 'http://img.anlan.xyz/ledou/jubao/2022/0608/7.jpg?imagelim',
-                    times: '第2次',
+                    area: '你猜',
+                    uid: '你猜',
+                    img: 'http://img.anlan.xyz/null.jpg',
+                    times: '初犯',
                 },
             ],
         };

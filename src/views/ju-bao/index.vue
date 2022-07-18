@@ -521,16 +521,36 @@ export default {
         {
           href: '/jubao/view/20220613',
           title: '2022年6月13日不文明行为备案',
-          area: 'null',
+          area: '空间5区',
         },
         {
           href: '/jubao/view/20220620',
           title: '2022年6月20日不文明行为备案',
-          area: 'null',
+          area: '空间4区',
         },
         {
           href: '/jubao/view/20220627',
           title: '2022年6月27日不文明行为备案',
+          area: '手q区，微信小程序2区',
+        },
+        {
+          href: '/jubao/view/20220704',
+          title: '2022年7月4日不文明行为备案',
+          area: '微信小程序2区',
+        },
+        {
+          href: '/jubao/view/20220711',
+          title: '2022年7月11日不文明行为备案',
+          area: 'null',
+        },
+        {
+          href: '/jubao/view/20220718',
+          title: '2022年7月18日不文明行为备案',
+          area: '手q区，微信小程序6区',
+        },
+        {
+          href: '/jubao/view/20220725',
+          title: '2022年7月25日不文明行为备案',
           area: 'null',
         },
       ],

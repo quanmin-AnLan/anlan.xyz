@@ -13,20 +13,14 @@ export default {
     data() {
         return {
             year: '2022',
-            month: '6',
-            day: '20',
+            month: '7',
+            day: '4',
             tableData: [
                 {
-                    area: '空间4区',
-                    uid: '29687129',
-                    img: 'http://img.anlan.xyz/ledou/jubao/2022/0620/1.jpg?imagelim',
+                    area: '微信小程序2区',
+                    uid: '9612093',
+                    img: 'http://img.anlan.xyz/ledou/jubao/2022/0214/2.jpg?imagelim',
                     times: '第3次',
-                },
-                {
-                    area: '空间4区',
-                    uid: '79806123',
-                    img: 'http://img.anlan.xyz/ledou/jubao/2022/0620/2.jpg?imagelim',
-                    times: '初犯',
                 },
             ],
         };
