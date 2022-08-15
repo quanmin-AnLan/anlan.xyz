@@ -65,7 +65,7 @@ export const yyxPost = (url: string, params: object = {}) => {
 };
 
 const anlan = axios.create({
-  baseURL: "http://data.anlan.xyz/",
+  baseURL: "http://api.anlan.xyz/",
 });
 
 export const anlanGet = (url: string, params: object) => {
