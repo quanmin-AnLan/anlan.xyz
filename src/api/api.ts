@@ -10,4 +10,4 @@ export const yyxQuestion = (params: object) => yyxGet('/topicList', params);
 
 export const useRanking = (params: object = {}) => yyxGet('/useranking', params);
 
-export const reportPV = (params: object) => anlanGet('/reportPV', params);
+export const reportPV = (params: object) => anlanGet('/report/pv', params);
